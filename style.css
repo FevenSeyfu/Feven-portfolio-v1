@@ -36,5 +36,10 @@ body{
 .logo{}
 .logo-placeholder{
     padding: 0.625rem 0.75rem;
-
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+.menu-icon{
+    height: 0.75rem;
+    width: 1.125rem;
 }
