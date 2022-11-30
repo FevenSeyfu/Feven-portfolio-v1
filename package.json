@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "prettier": "2.8.0"
+    "prettier": "2.8.0",
+    "stylelint-config-standard": "^29.0.0"
   },
   "name": "y",
   "description": "My portfolio website to showcase my works and accomplishments.",
