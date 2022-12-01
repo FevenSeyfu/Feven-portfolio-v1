@@ -19,7 +19,7 @@
     "csstree/validator": true,
     "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"],
     "scss/dollar-variable-pattern": "^foo",
-    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/selector-no-redundant-nesting-selector": true
     
   }
   
