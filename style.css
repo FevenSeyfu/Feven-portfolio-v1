@@ -1,19 +1,18 @@
 * {
-	 padding: 0;
-	 margin: 0;
-	 box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body{
-     font-family: 'Roboto', sans-serif;
-     background-color: black;
-     color:white;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color:white;
 }
 .toolbar-container{
     background-color: #3C3A39;
 }
 .toolbar{
     /* border: 1px solid white; */
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,14 +25,12 @@ body{
 }
 .nav-bar{
     /* border: 1px solid white; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3rem;
     padding: 0 2rem 0 0.15rem;
 }
-
 .logo-placeholder{
     padding: 0.625rem 0.75rem;
     font-weight: 700;
