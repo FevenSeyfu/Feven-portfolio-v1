@@ -40,3 +40,63 @@ body{
     height: 0.75rem;
     width: 1.125rem;
 }
+.headline{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 120px 24px;
+
+    background-image: url('images/Group.png');
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-position-x: right;
+    background-position-y: 200px;
+    height: 500px;
+}
+.primary-text{
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 90%;
+    line-height: 64px;
+    justify-content: left;
+    align-items: baseline;
+    letter-spacing: 0.37px;
+    font-weight: 400;
+    color: #FF6B00;
+}
+.supporting-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font: size 24px;
+    font-style: bold;
+    justify-self: left;
+    line-height: 32px;
+    line-height: 114%;
+    color: #FFF5E1;
+    margin: 12px 0; 
+}
+.description{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    justify-self: left;
+    align-self:flex-start;
+    color:#ffffff;
+    word-wrap:break-word;
+    margin: 5px 0;
+}
+ul{
+    list-style: none;
+}
+.social-icon{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 200px;
+    padding: 10px;
+}
