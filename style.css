@@ -9,7 +9,6 @@ body{
     color:white;
 }
 .nav-bar{
-    /* border: 1px solid white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,12 +25,10 @@ body{
     width: 1.125rem;
 }
 .headline{
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin: 120px 24px;
-
     background-image: url('images/Group.png');
     background-repeat: no-repeat;
     background-attachment: relative;
@@ -77,7 +74,6 @@ ul{
     list-style: none;
 }
 .social-icon{
-    /* border: 1px solid white; */
     display: flex;
     justify-self: left;
     align-items: center;
