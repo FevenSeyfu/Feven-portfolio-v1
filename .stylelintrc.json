@@ -1,5 +1,4 @@
 {
-styled_header
 "extends": [
     "stylelint-config-idiomatic-order",
     "./node_modules/prettier-stylelint/config.js"
