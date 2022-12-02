@@ -8,21 +8,6 @@ body{
     background-color: black;
     color:white;
 }
-.toolbar-container{
-    background-color: #3C3A39;
-}
-.toolbar{
-    /* border: 1px solid white; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 2.75rem;
-    padding: 1rem 1.313rem 1rem 1.75rem;
-}
-.time{
-    font-size: 0.875rem;
-}
 .nav-bar{
     /* border: 1px solid white; */
     display: flex;
