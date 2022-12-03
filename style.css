@@ -166,6 +166,20 @@ ul{
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 3%;
+    border: none;
+}
+.main-btn:hover{
+    background-color: #FFF5E1;
+    color: #FF6B00;
+    border: 1px solid #F55800;
+}
+.main-btn:disabled{
+    background-color: #F4F1F0;
+    color: #5B5957;
+}
+.main-btn:active{
+    background-color: #F55800;
+    color: white;
 }
 /*  */
 .work-cards-container{
@@ -177,12 +191,14 @@ ul{
     justify-content: center;
 }
 .work-card{
+    position: relative;
     background-image: url('images/work-section/Img Placeholder.png');
     background-repeat: no-repeat;
     background-size: 100%;
     grid-column: 6;
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 .card-header{
     color: white;
@@ -214,6 +230,7 @@ ul{
     border: none;
 }
 .btn-max-width{
+    position: absolute;
     width: 100%;
     background-color: #FF6B00;
     color: white;
@@ -224,5 +241,7 @@ ul{
     letter-spacing: 3%;
     justify-content: center;
     height: 48px;
-    margin-top: 5.7rem;
+    bottom: 0;
+    left: 0;
+    border: none;
 }
