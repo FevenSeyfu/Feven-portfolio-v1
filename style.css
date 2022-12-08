@@ -602,11 +602,18 @@ ul{
     width: 100vw;
     color: black;
 }
-.icon-bottom{
+/* .icon-bottom{
     color: #505F79;
     position: absolute;
-    left: 0.08%;
-    right: 0.01%;
-    top: 0%;
-    bottom: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 90x;
+} */
+.social-icon{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 90x;
+}
+.icon-btn{
+    margin-left: 5px
 }
