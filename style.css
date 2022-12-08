@@ -199,7 +199,7 @@ ul{
     justify-content: center;
 }
 .work-card{
-   background-image: url('images/work-section/Img Placeholder.png');
+    background-image: url('images/work-section/Img Placeholder.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
