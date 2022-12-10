@@ -144,7 +144,8 @@ ul{
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 44px;
+    /* line-height: 44px;
+    top: 136px; */
 }
 .work-description{
     font-family: 'Inter', sans-serif;
@@ -207,6 +208,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 .work-card{
     background-image: url('images/work-section/Img Placeholder.png');
@@ -276,9 +278,20 @@ ul{
     background-position-x: right;
     background-position-y: 230px;
 }
-.no_wrap{   
+.main-btn.no_wrap{   
     white-space: nowrap; 
     min-width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 161px;
+    height: 48px;
+    background: #F55800;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
 .hl-white{
     position: absolute;
@@ -496,13 +509,9 @@ ul{
         gap: 10px;
         width: 87px;
         height: 40px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
     }
     .social-icon{
         position: absolute;
@@ -512,6 +521,7 @@ flex-grow: 0;
         top: 394px;
         display: flex;
         flex-direction: column;
+        gap: 29.28px;
     }
     .headline{
         padding: 0px;
@@ -521,9 +531,10 @@ flex-grow: 0;
         background-image: url('images/Illustration-header.png');
         background-repeat: no-repeat;
         background-attachment: relative;
-        background-position-x: 895px;
-        background-position-y: 0px;
-        background-size: 540px 600px;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: 40% auto;
+        
     }
     .headline-container{
         display: flex;
@@ -569,13 +580,12 @@ flex-grow: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 130px 24px;
-        gap: 114px;
         position: absolute;
         width: 1204px;
         height: 1805px;
         left: 118px;
         top: 875px;
+        gap: 24px;
     }
     .works-header{
         display: flex;
@@ -584,7 +594,9 @@ flex-grow: 0;
         flex: none;
         order: 0;
         flex-grow: 0;
-        gap: 24px;
+        margin-top: 130px;
+        margin-bottom: 130px; 
+        margin-left: 133px;
     }
     .header-text{
         width: 315px;
@@ -611,6 +623,7 @@ flex-grow: 0;
         display: flex;
         flex-direction: row;
         gap: 24px;
+        width: 1155px;
     }
     .img-placeholder{
         width: 684px;
@@ -630,19 +643,21 @@ flex-grow: 0;
         flex: none;
         order: 1;
         flex-grow: 0;
+        top: 1643px;
     }
-    .work-header{
-        top: 1171px;
-    }
+
     .work-cards-container{
         display: flex;
         flex-direction: column;
-        gap: 37px;
-        width: 1156px;
-        height: 1379px;
+        justify-content:  center;
+        gap: 24px;
+        width: 1155px;
+        height: 879px;
         flex: none;
         order: 1;
         flex-grow: 0;
+        left: 141px;
+        top: 1643px;
     }
     .card-group-one{
         display: flex;
@@ -651,7 +666,6 @@ flex-grow: 0;
         position: absolute;
         width: 1155px;
         height: 448px;
-        left: -0.5px;
         bottom: 459px;
     }
     .card-group-two{
@@ -661,32 +675,32 @@ flex-grow: 0;
         position: absolute;
         width: 1155px;
         height: 435px;
-        left: 0px;
         bottom: 0px;
         
     }
-    .hide-btn{
-        display: none;
-    }
-    .visible-btn{
-        position: absolute;
-        height: 58px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
+    .btn-max-width{
+        visibility: hidden;
     }
     .work-card{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding: 20px 12px;
     }
-    .work-card.first{
+    .work-card:hover{
         background: url('images/first-workcard-bg.png');
         border: 2px solid #091E42;
         filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
     }
-    .hide{
+    .work-card:hover .btn-max-width{
+        visibility: visible;
+        position: absolute;
+        height: 58px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+    .work-card:hover :not(:last-child){
         visibility: hidden;
     }
     .about-section{
@@ -700,9 +714,9 @@ flex-grow: 0;
         background-image: url('images/bg-about me.png');
         background-repeat: no-repeat;
         background-attachment: relative;
-        background-position-x: left 107px;
-        background-position-y: 99.47px;
-        background-size: 540px 350px;
+        background-position-x: right;
+        background-position-y: 10%;
+        background-size: 40% auto;
     }
     .about-container{
         display: flex;
@@ -734,14 +748,18 @@ flex-grow: 0;
     .skills-section{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
         padding: 130px 0px;
         gap: 152px;
         position: absolute;
         width: 1157.46px;
         height: 596px;
-        left: 141px;
+        /* left: 141px; */
         top: 3279px;
+    }
+    .skill{
+        padding-top: 32px;
     }
     .item{
         display: flex;
