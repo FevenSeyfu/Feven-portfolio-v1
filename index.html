@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -17,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <title>My portfolio</title>
 </head>
 <body>
@@ -28,18 +31,39 @@
             <div class="hamburger-icon">
                 <img src="images/icon/menu-icon.png" class="menu-icon" alt="menu icon">
             </div>
+            <div class="nav-list">
+                <ul class="nav-items">
+                    <li>
+                        <a href="#" class="nav-item">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-item">Contact</a>
+                    </li>
+                </ul>
+                <a href="#" class="nav-item">
+                    <img src="images/icon/mail-icon.png" alt="Mail icon" class="mail-icon">
+                </a>
+            </div>
         </nav>
     </div>
     <section class="headline">
-        <div>
-            <h1  class="primary-text">Hey There. <br>I'm Feven</h1>
+        <div class="headline-container">
+            <div>
+                <h1  class="primary-text">Hey There. <br>I'm Feven</h1>
+            </div>
+            <div>
+                <h2 class="supporting-text">I'am a Software Developer</h2>
+            </div>
+           <div>
+            <p class="description">I can help you build a product,feature or website look through some of my work and experience if you like what you see and have a project you need coded,don't hesitate to contact me.</p>
+           </div>
+           <div class="illustration-header">
+            <img src="images/Illustration-Desktop.png" alt="background illustration" class="illustration-header">
+           </div>
         </div>
-        <div>
-            <h2 class="supporting-text">I'am a Software Developer</h2>
-        </div>
-       <div>
-        <p class="description">I can help you build a product,feature or website look through some of my work and experience if you like what you see and have a project you need coded,don't hesitate to contact me</p>
-       </div>
         <div class="social-media">
             <ul class="social-icon">
                 <li class="icon">
@@ -73,7 +97,7 @@
     <section class="works-section">
         <div class="works-header">
             <h2 class="header-text">My Recent Works</h2>
-            <hr class="hl">
+            <img class="hl" src="images/icon/Vector.png" alt=" a division">
         </div>
         <div class="main-work-section">
             <img src="images/work-section/main img Placeholder.png" alt="" class="img-placeholder">
@@ -94,7 +118,7 @@
                 </ul>
             </div>
             <button class="main-btn">See Project</button>
-        </div>
+        
         <div class="work-cards-container">
             <div class="work-card">
                 <h2 class="card-header">Professional Art <br> Printing Data</h2>
@@ -139,7 +163,7 @@
                     </ul>
                 </div>
                 <button class="btn-max-width">See Project</button>
-            </div>
+            </div> 
             <!-- fourth -->
             <div class="work-card">
                 <h2 class="card-header">Professional Art <br> Printing Data</h2>
@@ -185,6 +209,109 @@
                 </div>
                 <button class="btn-max-width">See Project</button>
             </div>
+        </div>
+    </div>
+    </section>
+    <section class="about-section">
+        <div>
+            <h1  class="primary-text">about me</h1>
+        </div>
+        <div>
+            <h2 class="description">
+            Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+            </h2>
+        </div>
+        <button class="main-btn no_wrap">Get My Resume</button>
+        <hr class="hl-white">
+    </section>
+    <section class="skills-section">
+        <div class="item">
+            <div class="skill-header">
+                <div class="rectangle prism"></div>
+                <h3 class="skill-title">Language</h3>
+            </div>
+            <ul class="skills">
+                <li class="skill">Javascript</li>
+                <li class="skill">Ruby</li>
+                <li class="skill">Html</li>
+                <li class="skill">Css</li>
+            </ul>
+        </div>
+        <!-- second -->
+        <div class="item">
+            <div class="skill-header">
+                <div class="rectangle"></div>
+                <h3 class="skill-title">Frameworks</h3>
+            </div>
+            <ul class="skills">
+                <li class="skill">Bootstrap</li>
+                <li class="skill">Ruby on Rails</li>
+                <li class="skill">RSPec</li>
+                <li class="skill">CapyBara</li>
+                <li class="skill">Selenium</li>
+            </ul>
+        </div>
+        <!-- third -->
+        <div class="item">
+            <div class="skill-header">
+                <div class="rectangle circle"></div>
+                <h3 class="skill-title">Skills</h3>
+            </div>
+            <ul class="skills">
+                <li class="skill">Codekit</li>
+                <li class="skill">Github</li>
+                <li class="skill">Codepen</li>
+                <li class="skill">Gitlab</li>
+                <li class="skill">Terminal</li>
+            </ul>
+        </div>
+    </section>
+    <section class="form-section">
+        <h2 class="form-intro">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h2>
+        <form action="https://formspree.io/f/mlevqpbd" method="post" class="form-container">
+            <div class="input-field">
+                <input type="text" class="name-input box" placeholder="Full Name" maxlength="30" required >
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" class="email-input box" placeholder="email address" required>
+            </div>
+            <div class="input-field">
+                <textarea class="box-text" name="comment" id="comment-input" cols="30" rows="10" placeholder="Enter text here" maxlength="500" aria-placeholder="Enter text area ..." required></textarea>
+            </div>
+            <button class="main-btn center">Get in touch</button>
+        </form>
+    </section>
+    <section class="bottom-nav">
+        <div class="social-media">
+            <ul class="social-icon">
+                <li class="icon-bottom">
+                    <a href="#" class="icon-btn">
+                        <img src="images/icon/Github-icon.png" alt="Github icon" class="github-icon">
+                    </a>
+                </li>
+                <li class="icon-bottom">
+                    <a href="#" class="icon-btn">
+                        <img src="images/icon/linkedin-icon.png" alt="linkedin icon" class="linkedin-icon">
+                    </a>
+                </li>
+                <li class="icon-bottom">
+                    <a href="#" class="icon-btn">
+                        <img src="images/icon/peace-icon.png" alt="peace icon" class="peace-icon">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#" class="icon-btn">
+                        <img src="images/icon/twitter-icon.png" alt="twitter icon" class="twitter-icon">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#" class="icon-btn">
+                        <img src="images/icon/m-icon.png" alt="m icon" class="m-icon">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
