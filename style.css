@@ -435,7 +435,7 @@ ul{
     display: none;
 }
 /* Desktop Verion Styling */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .desktop{
         display: contents;
     }
@@ -547,13 +547,10 @@ ul{
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0px;
-        gap: 24px;
-        width: 1133px;
-        height: 52px;
         flex: none;
         order: 0;
         flex-grow: 0;
+        gap: 24px;
     }
     .header-text{
         width: 315px;
@@ -565,8 +562,249 @@ ul{
         line-height: 52px;
         display: flex;
         align-items: center;
+        padding-top: 0px;
     }
     .hl{
         display: inline;
+        width: 794px;
+        height: 0px;
+        border: 1px solid #212121;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .main-work-section{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .img-placeholder{
+        width: 684px;
+        height: 448px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .work-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 448px;
+        height: 348px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .work-header{
+        top: 1171px;
+    }
+    .work-cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+        width: 1156px;
+        height: 1379px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .card-group-one{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        position: absolute;
+        width: 1155px;
+        height: 448px;
+        left: -0.5px;
+        bottom: 459px;
+    }
+    .card-group-two{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        position: absolute;
+        width: 1155px;
+        height: 435px;
+        left: 0px;
+        bottom: 0px;
+        
+    }
+    .hide-btn{
+        display: none;
+    }
+    .visible-btn{
+        position: absolute;
+        height: 58px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    .work-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px 12px;
+    }
+    .work-card.first{
+        background: url('images/first-workcard-bg.png');
+        border: 2px solid #091E42;
+        filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+    }
+    .hide{
+        visibility: hidden;
+    }
+    .about-section{
+        position: absolute;
+        width: 1440px;
+        height: 1195px;
+        left: 0px;
+        top: 2680px;
+        margin-top: 130px;
+
+        background-image: url('images/bg-about me.png');
+        background-repeat: no-repeat;
+        background-attachment: relative;
+        background-position-x: left 107px;
+        background-position-y: 99.47px;
+        background-size: 540px 350px;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 130px 0px;
+        position: absolute;
+        width: 566px;
+        height: 582px;
+        left: 142px;
+        gap: 24px;
+    }
+    .primary-text{
+        width: 566px;
+        height: 78px;
+    }
+    .description{
+        width: 566px;
+        height: 148px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .skills-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 130px 0px;
+        gap: 152px;
+        position: absolute;
+        width: 1157.46px;
+        height: 596px;
+        left: 141px;
+        top: 3279px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 289.46px;
+        height: 281.46px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .hl-white{
+        display: block;
+        position: absolute;
+        height: 0px;
+        left: 0px;
+        right: 0px;
+        top: 591px;
+        width: 50%;
+        border: 1px solid #FFFFFF;
+    }
+    .skills-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 130px 0px;
+        gap: 152px;
+        position: absolute;
+        width: 1157.46px;
+        height: 596px;
+        left: 141px;
+        top: 3279px;
+    }
+    .form-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 130px 0px;
+        gap: 24px;
+        position: absolute;
+        width: 1163px;
+        height: 590px;
+        left: 135px;
+        top: 4050px;
+    }
+    .form-intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
+        width: 455px;
+        height: 256px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        gap: 24px;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        width: 684px;
+        height: 330px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .main-btn-center{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        gap: 10px;
+        width: 122px;
+        height: 48px;
+    }
+    .bottom-nav{
+        position: absolute;
+        width: 1440px;
+        height: 72px;
+        left: 0px;
+        top: 4489px;
+    }
+    .social-icon.bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        left: 620px;
+        top: 170px;
     }
 }
