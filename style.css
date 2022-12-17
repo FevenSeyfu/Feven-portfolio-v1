@@ -125,6 +125,11 @@ ul{
     justify-content: left;
     padding: 0 24px;
 }
+.work-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .header-text{
     display: flex;
     align-items: center;
@@ -282,7 +287,7 @@ ul{
 .about-section{
     position: absolute;
     background-color: #1C1A19;
-    top: 3600px;
+    top: 3700px;
     width: 100%;
     height: 1401px;
     right: 0px;
@@ -402,8 +407,8 @@ ul{
     gap: 58px;
     position: absolute;
     width: 100%;
-    height: 844px;
-    top: 5000px;
+    height: 644px;
+    top: 5100px;
     left: calc(50% - 100vw/2);
 }
 .form-intro{
@@ -450,7 +455,7 @@ ul{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 5650px;
+    top: 5750px;
     height: 72px;
     width: 100vw;
     color: black;
