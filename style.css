@@ -23,8 +23,8 @@ body{
 }
 .logo-placeholder{
     position: absolute;
-    left: 2rem;
-    top: 1.25rem;
+    left: 1rem;
+    top: 1rem;
     font-weight: 700;
     font-size: 20px;
     text-decoration: none;
@@ -32,14 +32,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .menu-icon{
     position: absolute;
-    right: 10%;
+    right: 1rem;
+    top: 1rem;
     height: 1.5rem;
     width: 1.5rem;
-    margin: 0 3rem;
 }
 .nav-item{
     display: none;
@@ -143,6 +142,9 @@ ul{
     flex-grow: 0;
     margin: 24px 0;
 }
+.img-placeholder{
+    width: 100%;
+}
 .main-work-section{
     display: flex;
     flex-direction: column;
@@ -150,15 +152,14 @@ ul{
     justify-content: left;
     padding: 0px;
     flex: none 1 0;
-    left: 0%
+    left: 0%;
+    width: 100%;
 }
 .work-header{
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    /* line-height: 44px;
-    top: 136px; */
 }
 .work-description{
     font-family: 'Inter', sans-serif;
@@ -224,12 +225,13 @@ ul{
     gap: 24px;
 }
 .work-card{
-    background-image: url('images/work-section/Img Placeholder.png');
+    background:url('images/work-card-Img-Placeholder.svg') ;
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
+    width: 100%;
 }
 .card-header{
     color: white;
@@ -274,22 +276,23 @@ ul{
     border: none;
     margin-top: 85px;
 }
+
 .about-section{
     position: absolute;
     background-color: #1C1A19;
     top: 3800px;
     width: 100%;
-    height: 601px;
+    height: 1401px;
     right: 0px;
     display: flex;
     flex-direction: column;
     padding: 10px 24px;
     /* add background vector */
-    background-image: url('images/icon/about-bg-vector.png');
+    background-image: url('images/illustration-about me.svg');
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-position-x: right;
-    background-position-y: 230px;
+    background-position: right 20%;
+    background-size: 60%;
 }
 .main-btn.no_wrap{
     white-space: nowrap;
@@ -308,9 +311,9 @@ ul{
 }
 .hl-white{
     position: absolute;
-    width: 375px;
+    width: 80%;
     height: 0px;
-    top: calc(90% - 0px/2 + 0.5px);
+    top: 35%;
     border: 1px solid white;
     justify-self: center;
 }
@@ -327,7 +330,7 @@ ul{
     width: 100%;
     height: 800px;
     left: calc(50% - 100vw/2);
-    top: 4400px;
+    top: 40%;
 }
 .item{
     display: flex;
@@ -348,7 +351,6 @@ ul{
     flex: none;
     order: 0;
     flex-grow: 0;
-
 }
 .prism{
     transform: rotate(-45deg);
@@ -454,12 +456,12 @@ ul{
 .social-icon{
     display: flex;
     justify-content: space-evenly;
-    padding: 5px 90x;
+    gap: 20px;
 }
 .icon-btn{
     margin-left: 5px
 }
-.desktop{
+.desktop{g
     display: none;
 }
 /* Desktop Verion Styling */
@@ -719,7 +721,7 @@ ul{
         border: 1px solid black;
         width: 369px;
         height: 405px;
-        background:url('images/work-card-Img-Placeholder.svg') ;
+        background:url('images/work-card-Img-Placeholder.svg');
         padding-bottom: 16px;
     }
     .work-card:hover{
