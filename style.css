@@ -748,7 +748,7 @@ ul{
         width: 100%;
         height: 1195px;
         left: 0px;
-        top: 1614px;
+        top: 2049px;
         margin-top: 130px;
         background-image: url('images/illustration-about me.svg');
         background-repeat: no-repeat;
@@ -768,9 +768,8 @@ ul{
         gap: 24px;
     }
     .primary-text{
-        width: 100%;
+        width: 566px;
         height: 78px;
-        margin: 0;
     }
     .description{
         width: 100%;
@@ -789,7 +788,7 @@ ul{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 130px 10%;
+        padding: 50px 10%;
         gap: 52px;
         position: absolute;
         width: 100%;
@@ -816,7 +815,7 @@ ul{
         position: absolute;
         height: 0px;
         margin: 0 10%;
-        top: 591px;
+        top: 575px;
         width: 80%;
         border: 1px solid #FFFFFF;
     }
@@ -825,18 +824,20 @@ ul{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 130px 0px;
+        justify-content: center;
+        padding: 130px 135px;
         gap: 24px;
         position: absolute;
         width: 100%;
         height: 590px;
         left: 0;
-        top: 2809px;
+        top: 3244px;
     }
-    .form-intro{
+    .form-sec-intro{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content:left;
         padding: 0px;
         gap: 24px;
         width: 455px;
@@ -844,7 +845,21 @@ ul{
         flex: none;
         order: 0;
         flex-grow: 0;
-        gap: 24px;
+    }
+    .form-cont{
+        width: 100%;
+    }
+    .form-intro{
+       font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: #262626;
+
     }
     .form-container{
         display: flex;
@@ -852,11 +867,11 @@ ul{
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
-        width: 684px;
+        /* width: 684px;
         height: 330px;
         flex: none;
         order: 1;
-        flex-grow: 0;
+        flex-grow: 0; */
     }
     .main-btn-center{
         display: flex;
@@ -872,21 +887,21 @@ ul{
         width: 100%;
         height: 72px;
         left: 0px;
-        /* top: 4489px; */
-        left: 0;
-        border: 4px solid green;
+        top: 3834px;
+
     }
     .social-icon.bottom{
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 0px;
+
         position: absolute;
         width: 200px;
         height: 40px;
-        left:50%;
-        top: 170px;
-        border: 2px solid black;
+        left: 40%;
+        top: 16px;
+
     }
 }
 /* add animation to project */
