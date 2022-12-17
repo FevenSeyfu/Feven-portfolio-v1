@@ -47,52 +47,6 @@ body{
 .nav-item{
     display: none;
 }
-@media (min-width: 600px) {
-    .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        width: 100vw;
-        height: 72px;
-        left: 0px;
-        top: 0px;
-        background: #3E3C3C;
-        padding: 25px 50px;
-    }
-    .hamburger-icon{
-        display: none;
-    }
-    .logo-placeholder{
-        top: 26px;
-        left: 40px;
-    }
-    .nav-list{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-    .nav-items{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 32px;
-    }
-    .nav-item{
-        text-decoration: none;
-        width: 63px;
-        height: 20px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF;
-    }
-}
 .headline{
     background-color: #1C1A19;
     display: flex;
@@ -320,30 +274,6 @@ ul{
     border: none;
     margin-top: 85px;
 }
-@media (min-width: 600px) {
-    .works-section{
-        top: 870px;
-    }
-    .works-header{
-        display: flex;
-        align-items: center;
-        top: 1005px;
-    }
-    .header-text{
-        top: 870px
-    }
-    .hl{
-        width: 794px;
-        height: 0px;
-        border: 1px solid #212121;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-    }
-    .main-work-section{
-        display: grid;
-    }
-}
 .about-section{
     position: absolute;
     background-color: #1C1A19;
@@ -521,13 +451,6 @@ ul{
     width: 100vw;
     color: black;
 }
-/* .icon-bottom{
-    color: #505F79;
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px 90x;
-} */
 .social-icon{
     display: flex;
     justify-content: space-evenly;
@@ -975,7 +898,7 @@ ul{
         height: 40px;
         left: 40%;
         top: 16px;
-
+g
     }
     .bottom-icon path{
         fill: #505F79;
