@@ -53,12 +53,12 @@ body{
     justify-content: left;
     padding: 10px 0px 10px 24px;
     width: 100%;
-    background-image: url('images/Group.png');
+    background-image: url('images/illustration-header-mobile.svg');
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-position-x: right;
-    background-position-y: 250px;
-    height: 520px;
+    background-position: right 60%;
+    background-size: 50%;
+    height: 600px;
 }
 .primary-text{
     font-family: 'Crete Round', serif;
@@ -71,6 +71,7 @@ body{
     letter-spacing: 0.37px;
     font-weight: 400;
     color: #FF6B00;
+    margin-top: 50px;
 }
 .supporting-text{
     font-family: 'Roboto', sans-serif;
@@ -93,6 +94,7 @@ body{
     color:#ffffff;
     word-wrap:break-word;
     margin: 5px 0;
+    width: 70%;
 }
 ul{
     list-style: none;
@@ -280,7 +282,7 @@ ul{
 .about-section{
     position: absolute;
     background-color: #1C1A19;
-    top: 3800px;
+    top: 3600px;
     width: 100%;
     height: 1401px;
     right: 0px;
@@ -401,7 +403,7 @@ ul{
     position: absolute;
     width: 100%;
     height: 844px;
-    top: 5200px;
+    top: 5000px;
     left: calc(50% - 100vw/2);
 }
 .form-intro{
@@ -448,7 +450,7 @@ ul{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 6000px;
+    top: 5650px;
     height: 72px;
     width: 100vw;
     color: black;
@@ -461,7 +463,7 @@ ul{
 .icon-btn{
     margin-left: 5px
 }
-.desktop{g
+.desktop{
     display: none;
 }
 /* Desktop Verion Styling */
