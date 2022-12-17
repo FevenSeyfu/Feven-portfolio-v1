@@ -230,6 +230,7 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 24px;
+    margin-top: 1rem;
 }
 .work-card{
     background:url('images/work-card-Img-Placeholder.svg') ;
@@ -703,7 +704,7 @@ ul{
         height: 448px;
         left: 0px;
         padding: 0 10%;
-        top: 743px;
+        top: 900px;
     }
     .card-group-two{
         display: flex;
@@ -715,7 +716,7 @@ ul{
         height: 435px;
         left: 0px;
         padding: 0 10%;
-        top: 1179px;
+        top: 1340px;
     }
 
     .btn-max-width{
@@ -754,7 +755,7 @@ ul{
         width: 100%;
         height: 1310px;
         left: 0px;
-        top: 2055px;
+        top: 2250px;
         margin-top: 130px;
         background-image: url('images/illustration-about me.svg');
         background-repeat: no-repeat;
@@ -837,7 +838,7 @@ ul{
         width: 100%;
         height: 590px;
         left: 0;
-        top: 3300px;
+        top: 3500px;
     }
     .form-sec-intro{
         display: flex;
@@ -893,7 +894,7 @@ ul{
         width: 100%;
         height: 72px;
         left: 0px;
-        top: 3834px;
+        top: 4000px;
 
     }
     .social-icon.bottom{
