@@ -259,30 +259,6 @@ ul{
     border: none;
     margin-top: 85px;
 }
-@media (min-width: 600px) {
-    .works-section{
-        top: 870px;
-    }
-    .works-header{
-        display: flex;
-        align-items: center;
-        top: 1005px;
-    }
-    .header-text{
-        top: 870px
-    }
-    .hl{
-        width: 794px;
-        height: 0px;
-        border: 1px solid #212121;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-    }
-    .main-work-section{
-        display: grid;
-    }
-}
 .about-section{
     position: absolute;
     background-color: #1C1A19;
@@ -299,10 +275,6 @@ ul{
     background-attachment: relative;
     background-position-x: right;
     background-position-y: 230px;
-}
-.no_wrap{
-    white-space: nowrap;
-    min-width: auto;
 }
 .hl-white{
     position: absolute;
