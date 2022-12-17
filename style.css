@@ -903,6 +903,9 @@ ul{
         top: 16px;
 
     }
+    .bottom-icon path{
+        fill: #505F79;
+    }
 }
 /* add animation to project */
 .icon-btn:hover{
