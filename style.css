@@ -542,11 +542,11 @@ ul{
 /* Desktop Verion Styling */
 @media (min-width: 768px) {
     html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
     }
     body {
         box-sizing: border-box;
@@ -924,7 +924,7 @@ ul{
         width: 100%;
     }
     .form-intro{
-       font-family: 'Inter';
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
