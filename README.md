@@ -42,26 +42,6 @@
 
 Plain CSS with flexbox
 
-<!-- <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details> -->
 
 <!-- Features -->
 
@@ -81,7 +61,7 @@ Plain CSS with flexbox
 
 > Portfolio link.
 
-- [Live Demo Link](https://fevenseyfu.github.io/portfolio-v1/)
+- [My Portfolio](https://fevenseyfu.github.io/portfolio-v1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
