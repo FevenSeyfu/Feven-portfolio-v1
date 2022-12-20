@@ -59,6 +59,7 @@ body{
     background-position: right 60%;
     background-size: 50%;
     height: 600px;
+    z-index: -1;
 }
 .primary-text{
     font-family: 'Crete Round', serif;
@@ -910,7 +911,7 @@ ul{
         top: 16px;
     }
     .bottom-icon path{
-        fill: #505F79;
+        fill: #000;
     }
 }
 /* add animation to project */
