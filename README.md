@@ -45,7 +45,6 @@ Plain CSS with flexbox.
 ### project presentation outline
 - [Project presentation outline](https://docs.google.com/document/d/1CgYAoJn9p5ECpyezN5K_fJ9v-jfkpNXpfRA9aIc_if4/edit?usp=sharing)
 
-<a href
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
