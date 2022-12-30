@@ -22,114 +22,127 @@
     <title>My portfolio</title>
 </head>
 <body>
-    <div class="toolbar-container">
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="#" class="logo-placeholder">Feven Seyfu</a>
-            </div>
-            <div class="hamburger-icon">
-                <a href="#"><img src="images/icons/Menu-icon.svg" class="menu-icon" alt="menu icon"></a>
-            </div>
-            <div class="desktop">
-                <ul class="nav-items">
-                    <li><a href="#" class="nav-item">Portfolio</a></li>
-                    <li><a href="#" class="nav-item">About</a></li>
-                    <li><a href="#" class="nav-item">Contact</a></li>
-                    <li class="nav-item">
-                        <a href="#">
-                            <img src="images/icons/Mail-icon.svg" alt="Mail icon" class="mail-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <section class="headline">
-        <div class="headline-container">
-            <div>
-                <h1  class="primary-text">Hey There. <br>I'm Feven</h1>
-            </div>
-            <div>
-                <h2 class="supporting-text">I'am a Software Developer</h2>
-            </div>
-           <div>
-                <p class="description">I can help you build a product,feature or website look through some of my work and experience if you like what you see and have a project you need coded,don't hesitate to contact me.
-                </p>
-           </div>
-        </div>
-        <div class="social-media">
-            <ul class="social-icon">
-                <li class="icon">
-                    <a href="#" class="icon-btn">
-                        <img src="images/icons/Github-icon.svg" alt="Github icon" class="bottom-icon">
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="#" class="icon-btn">
-                        <img src="images/icons/Linkedin-icon.svg" alt="linkedin icon" class="bottom-icon">
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="#" class="icon-btn">
-                        <img src="images/icons/Angel list-icon.svg" alt="angelist icon" class="bottom-icon">
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="#" class="icon-btn">
-                        <img src="images/icons/Twitter-icon.svg" alt="twitter icon" class="bottom-icon">
-                    </a>
-                </li>
-                <li class="icon">
-                    <a href="#" class="icon-btn">
-                        <img src="images/icons/medium-icon.svg" alt="medium icon" class="bottom-icon">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="works-section">
+		<div id="mobile-menu" class="">
+			<button class="cancel-btn" >
+				<img src="images/icons/Cancel-Icon.svg" alt="cancel button icon" class="cancel-icon">
+			</button>
+			<div class="main-navbar">
+				<ul class="nav-items mobile">
+					<li><a href="#portolio" class="nav-item mobile portfolio" >Portfolio</a></li>
+					<li><a href="#about" class="nav-item mobile about">About</a></li>
+					<li><a href="#contact" class="nav-item mobile contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+    <div class="main-body">
+			<div class="toolbar-container">
+					<nav class="nav-bar">
+							<div class="logo">
+									<a href="#" class="logo-placeholder">Feven Seyfu</a>
+							</div>
+							<div class="hamburger-icon">
+									<a href="#"><img src="images/icons/Menu-icon.svg" class="menu-icon" alt="menu icon"></a>
+							</div>
+							<div class="desktop">
+									<ul class="nav-items">
+											<li><a href="#portolio" class="nav-item">Portfolio</a></li>
+											<li><a href="#about" class="nav-item">About</a></li>
+											<li><a href="#contact" class="nav-item">Contact</a></li>
+											<li class="nav-item">
+													<a href="#">
+															<img src="images/icons/Mail-icon.svg" alt="Mail icon" class="mail-icon">
+													</a>
+											</li>
+									</ul>
+							</div>
+					</nav>
+			</div>
+			<section class="headline">
+					<div class="headline-container">
+							<div>
+									<h1  class="primary-text">Hey There. <br>I'm Feven</h1>
+							</div>
+							<div>
+									<h2 class="supporting-text">I'am a Software Developer</h2>
+							</div>
+						<div>
+									<p class="description">I can help you build a product,feature or website look through some of my work and experience if you like what you see and have a project you need coded,don't hesitate to contact me.
+									</p>
+						</div>
+					</div>
+					<div class="social-media">
+							<ul class="social-icon">
+									<li class="icon">
+											<a href="#" class="icon-btn">
+													<img src="images/icons/Github-icon.svg" alt="Github icon" class="bottom-icon">
+											</a>
+									</li>
+									<li class="icon">
+											<a href="#" class="icon-btn">
+													<img src="images/icons/Linkedin-icon.svg" alt="linkedin icon" class="bottom-icon">
+											</a>
+									</li>
+									<li class="icon">
+											<a href="#" class="icon-btn">
+													<img src="images/icons/Angel list-icon.svg" alt="angelist icon" class="bottom-icon">
+											</a>
+									</li>
+									<li class="icon">
+											<a href="#" class="icon-btn">
+													<img src="images/icons/Twitter-icon.svg" alt="twitter icon" class="bottom-icon">
+											</a>
+									</li>
+									<li class="icon">
+											<a href="#" class="icon-btn">
+													<img src="images/icons/medium-icon.svg" alt="medium icon" class="bottom-icon">
+											</a>
+									</li>
+							</ul>
+					</div>
+			</section>
+    	<section class="works-section" id="portfolio">
         <div class="works-header">
-            <h2 class="header-text">My Recent Works</h2>
-            <hr class="hl" >
+					<h2 class="header-text">My Recent Works</h2>
+					<hr class="hl" >
         </div>
         <div class="main-work-section">
-            <img src="images/main-work-Img-Placeholder.svg" alt="main work demo placeholder" class="img-placeholder">
-            <div class="work-container">
-                <h2 class="work-header">Multi-Post Stories</h2>
-                <div class="work-description">
-                    <p>
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-                    </p>
-                </div>
-                <div>
-                    <ul class="tags-container">
-                        <li>
-                            <button class="tag" type="button">CSS</button>
-                        </li>
-                        <li><button class="tag" type="button">html</button></li>
-                        <li><button class="tag" type="button">bootstrap</button></li>
-                        <li><button class="tag" type="button">Ruby</button></li>
-                    </ul>
-                </div>
-                <button class="main-btn work-sec" type="button">See Project</button>
-            </div>
+          <img src="images/main-work-Img-Placeholder.svg" alt="main work demo placeholder" class="img-placeholder">
+          <div class="work-container">
+							<h2 class="work-header">Multi-Post Stories</h2>
+							<div class="work-description">
+									<p>
+											A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+									</p>
+							</div>
+							<div>
+									<ul class="tags-container">
+											<li>
+													<button class="tag" type="button">CSS</button>
+											</li>
+											<li><button class="tag" type="button">html</button></li>
+											<li><button class="tag" type="button">bootstrap</button></li>
+											<li><button class="tag" type="button">Ruby</button></li>
+									</ul>
+							</div>
+							<button class="main-btn work-sec" type="button">See Project</button>
+					</div>
         </div>
         <!-- work Card -->
         <div class="work-cards-container">
             <div class="card-group-one">
                 <div class="work-card">
-                    <h2 class="card-header">Professional Art <br> Printing Data</h2>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width" type="button">See Project</button>
+									<h2 class="card-header">Professional Art <br> Printing Data</h2>
+									<p class="card-description">
+											A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+									</p>
+									<div>
+											<ul class="card-tags">
+													<li><button class="tag blur" type="button">html</button></li>
+													<li><button class="tag blur" type="button">bootstrap</button></li>
+													<li><button class="tag blur" type="button">Ruby</button></li>
+											</ul>
+									</div>
+									<button class="btn-max-width" type="button">See Project</button>
                 </div>
                 <!-- second work card -->
                 <div class="work-card">
@@ -210,9 +223,8 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-container">
             <div>
                 <h1  class="primary-text">About me</h1>
@@ -268,7 +280,7 @@
             </div>
         </div>
     </section>
-    <section class="form-section">
+    <section class="form-section" id="contact">
         <div class="form-sec-intro">
             <h2 class="form-intro">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -320,5 +332,8 @@
             </ul>
         </div>
     </section>
+		</div>
+
+		<script src="mobile-menu.js"></script>
 </body>
 </html>

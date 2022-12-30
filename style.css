@@ -318,7 +318,7 @@ ul {
 .about-section {
   position: absolute;
   background-color: #1c1a19;
-  top: 3700px;
+  top: 3800px;
   width: 100%;
   height: 1401px;
   right: 0;
@@ -351,7 +351,7 @@ ul {
 }
 
 .hl-white {
-  position: absolute;
+  position: relative;
   width: 80%;
   height: 0;
   top: 35%;
@@ -516,7 +516,52 @@ ul {
   display: none;
 }
 
+/* mobile menu style */
+#mobile-menu {
+  display: none;
+}
+
+.mobile-menu-style {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 57px;
+  background-color: #3c3c39;
+}
+
+.nav-items .mobile {
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-bottom: 1px solid #6f6c6b;
+  color: #fff5e1;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 8px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.cancel-btn {
+  width: 100%;
+  height: auto;
+  background-color: #3c3c39;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: end;
+  border-style: none;
+  padding: 5%;
+}
 /* Desktop Verion Styling */
+
 @media (min-width: 768px) {
   html,
   body {
@@ -597,7 +642,7 @@ ul {
     width: 20px;
     height: 98.96px;
     left: 36px;
-    top: 20rem;
+    top: 15rem;
     display: flex;
     flex-direction: column;
     gap: 29.28px;
@@ -605,7 +650,6 @@ ul {
 
   .headline {
     padding: 0;
-    height: 798px;
     width: 100%;
     background-color: #1c1a19;
     background-image: url('images/Illustration-header.svg');
@@ -630,7 +674,6 @@ ul {
   .primary-text {
     width: 566px;
     height: 160px;
-    margin-bottom: 50px;
   }
 
   .supporting-text {
@@ -667,8 +710,6 @@ ul {
     width: 100%;
     height: auto;
     left: 0;
-
-    /* top: 875px; */
     gap: 24px;
     padding: 0;
   }
@@ -710,7 +751,7 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    width: 80%;
+    width: 80vw;
     left: 0;
     margin: auto 10%;
   }
