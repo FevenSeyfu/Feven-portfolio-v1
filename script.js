@@ -2,6 +2,7 @@ const hamburgerBtn = document.querySelector('.hamburger-icon');
 const cancelBtn = document.querySelector('.cancel-btn');
 const mainBody = document.querySelector('.main-body');
 const mobileScreen = window.matchMedia('screen and (max-width:768px)');
+const desktopScreen = window.matchMedia('screen and (min-width:768px)');
 const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuContent = document.querySelectorAll('.nav-items .mobile');
 const menuElements = Array.from(mobileMenuContent);
@@ -40,4 +41,26 @@ hamburgerBtn.addEventListener('click', displayMobileMenu);
 cancelBtn.addEventListener('click', reverseEvent);
 for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', chooseSection);
+}
+
+// Project detail popup window
+// store popup window data
+const projectDetail = {
+  id: 1,
+  name: 'Keeping track of hundreds  of components website',
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+  featured_image: 'images/featured-images/project-img-1.png',
+  technologies: {
+    first: 'html',
+    second: 'Bootstrap',
+    third: 'Ruby on rails',
+  },
+  linkTo_live: '#',
+  linkTo_source: '#',
+};
+
+// creat popup window desktop version
+
+if (desktopScreen.matches) {
+	
 }
