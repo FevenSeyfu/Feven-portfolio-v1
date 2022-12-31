@@ -77,7 +77,8 @@ body {
   letter-spacing: 0.37px;
   font-weight: 400;
   color: #ff6b00;
-  margin-top: 50px;
+
+  /* margin-top: 50px; */
 }
 
 .supporting-text {
