@@ -7,6 +7,13 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuContent = document.querySelectorAll('.nav-items .mobile');
 const menuElements = Array.from(mobileMenuContent);
 
+// popup window
+const openPopupBtn = document.querySelectorAll('.open-popup-btn');
+const popupWindow = document.querySelector('#popup-window');
+const popupBackground = document.querySelector('#popup-bg');
+const closePopupBtn = document.querySelector('.close-popup-btn');
+const hiddenSection = document.querySelector('main-section');
+
 function reverseEvent() {
   mainBody.style.display = 'block';
   mobileMenu.style.display = 'none';
@@ -60,7 +67,21 @@ const projectDetail = {
 };
 
 // creat popup window desktop version
-
+function openPopUpDesktop() {
+  window.scrollTo(0, 0);
+  popupWindow.style.display = 'block';
+  popupBackground.classList.add('popup-bg');
+  hiddenSection.style.display = 'none';
+}
+function closePopUpDesktop() {
+  window.location.href = '#portfolio';
+  popupWindow.style.display = 'none';
+  popupBackground.classList.remove('popup-bg');
+}
 if (desktopScreen.matches) {
-	
+  for (let i = 0; i < openPopupBtn.length; i += 1) {
+    openPopupBtn[i].addEventListener('click', openPopUpDesktop);
+  }
+
+  closePopupBtn.addEventListener('click', closePopUpDesktop);
 }

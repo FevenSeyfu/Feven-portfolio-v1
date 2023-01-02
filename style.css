@@ -1,3 +1,4 @@
+/* stylelint-disable no-missing-end-of-source-newline */
 /* stylelint-disable order/properties-order */
 * {
   box-sizing: border-box;
@@ -834,7 +835,7 @@ ul {
   }
 
   .btn-max-width {
-    display: none;
+    visibility: hidden;
   }
 
   .work-card {
@@ -855,7 +856,7 @@ ul {
   }
 
   .work-card:hover .btn-max-width {
-    display: block;
+    visibility: visible;
     position: absolute;
     height: 58px;
     left: 0;
@@ -1043,4 +1044,40 @@ ul {
 .logo-placeholder:hover {
   transform: rotate(360deg);
   color: #f55800;
+}
+
+/* Project detail popup window desktop version styling */
+.popup-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(5px);
+  overflow: hidden;
+}
+
+#popup-window {
+  display: none;
+}
+
+.popup-window-style {
+	display: flex;
+	flex-direction: column;
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  left: 10vw;
+  top: 112px;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.top-section{
+	display: flex;
+
 }
