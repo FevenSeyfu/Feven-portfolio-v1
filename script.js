@@ -1,3 +1,4 @@
+// declaring variables
 const hamburgerBtn = document.querySelector('.hamburger-icon');
 const cancelBtn = document.querySelector('.cancel-btn');
 const mainBody = document.querySelector('.main-body');
@@ -6,11 +7,13 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuContent = document.querySelectorAll('.nav-items .mobile');
 const menuElements = Array.from(mobileMenuContent);
 
+// hidden function
 function reverseEvent() {
   mainBody.style.display = 'block';
   mobileMenu.style.display = 'none';
 }
 
+// visible function
 function displayMobileMenu() {
   if (mobileScreen.matches) {
     mainBody.style.display = 'none';
@@ -23,6 +26,7 @@ function displayMobileMenu() {
   window.addEventListener('resize', reverseEvent);
 }
 
+// hyperlinks
 function chooseSection(e) {
   reverseEvent();
   const sections = e.target.classList;
