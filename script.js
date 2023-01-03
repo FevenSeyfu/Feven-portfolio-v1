@@ -52,19 +52,47 @@ for (let i = 0; i < menuElements.length; i += 1) {
 
 // Project detail popup window
 // store popup window data
-const projectDetail = {
-  id: 1,
-  name: 'Keeping track of hundreds  of components website',
-  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-  featured_image: 'images/featured-images/project-img-1.png',
-  technologies: {
-    first: 'html',
-    second: 'Bootstrap',
-    third: 'Ruby on rails',
+const projectDetail = [
+  {
+    id: 1,
+    name: 'Keeping track of hundreds  of components website',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featured_image: 'images/featured-images/project-img-1.png',
+    technologies: {
+      first: 'html',
+      second: 'Bootstrap',
+      third: 'Ruby on rails',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
   },
-  linkTo_live: '#',
-  linkTo_source: '#',
-};
+  {
+    id: 2,
+    name: 'Data Dashboard Healthcare',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featured_image: 'images/featured-images/project Placeholder 2.png',
+    technologies: {
+      first: 'html',
+      second: 'Bootstrap',
+      third: 'Ruby',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
+  },
+  {
+    id: 3,
+    name: 'Website Protfolio ',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    featured_image: 'images/featured-images/project Placeholder 2.png',
+    technologies: {
+      first: 'html',
+      second: 'Bootstrap',
+      third: 'Ruby',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
+  },
+];
 
 // creat popup window desktop version
 function openPopUpDesktop() {

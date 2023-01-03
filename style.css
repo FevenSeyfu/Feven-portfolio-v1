@@ -867,7 +867,7 @@ ul {
   }
 
   .work-card:hover :not(:last-child) {
-    visibility: hidden;
+    display: none;
   }
 
   .about-section {
@@ -1064,20 +1064,72 @@ ul {
 }
 
 .popup-window-style {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 80vw;
-  height: 70vh;
+  width: 80%;
+  height: 80%;
   left: 10vw;
   top: 112px;
   z-index: 9999;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  padding: 24px;
+  overflow: scroll;
 }
 
-.top-section{
-	display: flex;
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.close-btn {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+}
+
+.tags-container.popup {
+  border: 1px solid black;
+  height: 40px;
+}
+
+.demo-section {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-placeholder-img {
+  border: 1px solid black;
+  width: 60%;
+  height: 60%;
+  left: calc(50% - 659px / 2 - 224.5px);
+  top: 156px;
+}
+
+.project-description {
+  width: 40%;
+  height: 50%;
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  top: calc(50% - 48px / 2 + 264.5px);
+  left: 700px;
+  gap: 12px;
 }
