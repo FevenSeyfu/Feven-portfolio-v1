@@ -15,8 +15,18 @@ const popupBackground = document.querySelector('#popup-bg');
 const closePopupBtn = document.querySelector('.close-popup-btn');
 const hiddenSection = document.querySelector('main-section');
 
-// work section variables
+// work section variables match for screen size
 const workSection = document.getElementById('project-cards-container');
+function checkscreensize() {
+  if (desktopScreen.matches) {
+    workSection.classList.remove('project-cards-mobile');
+    workSection.classList.add('project-cards');
+  } else if (mobileScreen.matches) {
+    workSection.classList.remove('project-cards');
+    workSection.classList.add('project-cards-mobile');
+  }
+}
+window.addEventListener('resize', checkscreensize);
 
 // cancle mobile menu
 function reverseEvent() {
@@ -166,6 +176,7 @@ cards.forEach((card) => {
 
   // Add the background image to card
   const imageLink = projectDetail[card].featured_image;
+  const hoverImageLink = 'images/featured-images/hover-image-placeholder.svg';
   workCard.style.background = `url(${imageLink})`;
   workSection.appendChild(workCard);
 
@@ -200,14 +211,14 @@ cards.forEach((card) => {
   actionButton.innerText = 'See Project';
   workCard.appendChild(actionButton);
 
-  // show action button on hover show
+  // show action button and change background on hover
   workCard.addEventListener('mouseenter', () => {
     actionButton.classList.add('show');
-    workCard.classList.add('work-card-hover ');
+    workCard.style.background = `url(${hoverImageLink})`;
   });
-  // hide when not hovering
+  // hide action button when not hovering
   workCard.addEventListener('mouseleave', () => {
     actionButton.classList.remove('show');
-    workCard.classList.add('work-card-hover ');
+    workCard.style.background = `url(${imageLink})`;
   });
 });

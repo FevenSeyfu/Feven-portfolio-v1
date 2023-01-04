@@ -124,7 +124,8 @@ ul {
 }
 
 /* style work section */
-.works-section {
+
+/* .works-section {
   background-color: white;
   color: black;
   position: absolute;
@@ -137,7 +138,7 @@ ul {
   align-items: center;
   justify-content: left;
   padding: 0 24px;
-}
+} */
 
 .work-container {
   display: flex;
@@ -705,18 +706,6 @@ ul {
     flex-grow: 0;
   }
 
-  .works-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: 0;
-    gap: 24px;
-    padding: 0;
-  }
-
   .works-header {
     display: flex;
     flex-direction: row;
@@ -989,12 +978,6 @@ ul {
     align-items: flex-start;
     padding: 0;
     gap: 24px;
-
-    /* width: 684px;
-        height: 330px;
-        flex: none;
-        order: 1;
-        flex-grow: 0; */
   }
 
   .main-btn-center {
@@ -1050,10 +1033,19 @@ ul {
 }
 
 /* Dynamic-work card */
-#project-cards-container {
+.project-cards {
+  margin: 1rem 142px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  align-self: center;
   gap: 1rem;
+}
+
+.project-cards-mobile {
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
 }
 
 .show {
