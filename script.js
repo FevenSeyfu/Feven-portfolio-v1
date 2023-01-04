@@ -74,7 +74,7 @@ const projectDetail = [
     id: 2,
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project Placeholder 2.png.png',
+    featured_image: 'images/featured-images/project-Placeholder-2.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
@@ -87,7 +87,7 @@ const projectDetail = [
     id: 3,
     name: 'Website Protfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project Placeholder 3.png',
+    featured_image: 'images/featured-images/project-Placeholder-3.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
@@ -100,7 +100,7 @@ const projectDetail = [
     id: 4,
     name: 'Profesional Art Printing Data More',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project Placeholder 1.png',
+    featured_image: 'images/featured-images/project-Placeholder-1.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
@@ -113,7 +113,7 @@ const projectDetail = [
     id: 5,
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project Placeholder 2.png',
+    featured_image: 'images/featured-images/project-Placeholder-2.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
@@ -126,7 +126,7 @@ const projectDetail = [
     id: 6,
     name: 'Website Protfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project Placeholder 3.png',
+    featured_image: 'images/featured-images/project-Placeholder-3.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
@@ -160,12 +160,15 @@ if (desktopScreen.matches) {
 // create the work section dynamically
 const cards = Object.keys(projectDetail);
 cards.forEach((card) => {
-  // create the card header and append to container
   const workCard = document.createElement('div');
   workCard.classList.add('work-card');
+
+  // Add the background image to card
+  const imageLink = projectDetail[card].featured_image;
+  workCard.style.background = `url(${imageLink})`;
   workSection.appendChild(workCard);
 
-  // add header to work card
+  // create the card header and append to container
   const cardHeader = document.createElement('h4');
   cardHeader.classList.add('card-header');
   cardHeader.innerText = projectDetail[card].name;
@@ -176,17 +179,34 @@ cards.forEach((card) => {
   cardDescription.classList.add('card-description');
   cardDescription.innerText = projectDetail[card].description;
   workCard.appendChild(cardDescription);
+
+  // Add the technologies list
   const technologiesContainer = document.createElement('ul');
   technologiesContainer.classList.add('card-tags');
   const techno = Object.keys(projectDetail[card].technologies);
   techno.forEach((btn) => {
     const technologylist = document.createElement('li');
     const technologyBtn = document.createElement('button');
-    technologyBtn.classList.add('tag');
-    technologyBtn.classList.add('blur');
+    technologyBtn.classList.add('tag', 'blur');
     technologyBtn.innerText = projectDetail[card].technologies[btn];
     technologylist.appendChild(technologyBtn);
     technologiesContainer.appendChild(technologylist);
     workCard.appendChild(technologiesContainer);
+  });
+  // Add the button
+  const actionButton = document.createElement('button');
+  actionButton.classList.add('btn-max-width', 'open-popup-btn');
+  actionButton.innerText = 'See Project';
+  workCard.appendChild(actionButton);
+
+  // show action button on hover show
+  workCard.addEventListener('mouseenter', () => {
+    actionButton.classList.add('show');
+    workCard.classList.add('work-card-hover ');
+  });
+  // hide when not hovering
+  workCard.addEventListener('mouseleave', () => {
+    actionButton.classList.remove('show');
+    workCard.classList.add('work-card-hover ');
   });
 });
