@@ -1,3 +1,4 @@
+// declaring variables
 const hamburgerBtn = document.querySelector('.hamburger-icon');
 const cancelBtn = document.querySelector('.cancel-btn');
 const mainBody = document.querySelector('.main-body');

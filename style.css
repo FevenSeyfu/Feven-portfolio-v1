@@ -849,7 +849,6 @@ ul {
     border: 1px solid black;
     width: 369px;
     height: 405px;
-    /* background: url('images/work-card-Img-Placeholder.svg'); */
     padding-bottom: 16px;
   }
 
@@ -1059,13 +1058,14 @@ ul {
 
 .show {
   display: block;
-}g
+}
 
 .work-card-hover {
   background: url('images/work card hover-Img-Placeholder.svg');
   border: 2px solid #091e42;
   filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
 }
+
 /* Project detail popup window desktop version styling */
 .popup-bg {
   position: fixed;
