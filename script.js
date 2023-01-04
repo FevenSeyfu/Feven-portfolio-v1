@@ -8,6 +8,7 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuContent = document.querySelectorAll('.nav-items .mobile');
 const menuElements = Array.from(mobileMenuContent);
 
+
 // popup window
 const openPopupBtn = document.querySelectorAll('.open-popup-btn');
 const popupWindow = document.querySelector('#popup-window');
@@ -211,3 +212,4 @@ cards.forEach((card) => {
     workCard.classList.add('work-card-hover ');
   });
 });
+
