@@ -1133,3 +1133,9 @@ ul {
   left: 700px;
   gap: 12px;
 }
+
+#project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}

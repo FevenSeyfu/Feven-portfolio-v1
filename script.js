@@ -14,6 +14,10 @@ const popupBackground = document.querySelector('#popup-bg');
 const closePopupBtn = document.querySelector('.close-popup-btn');
 const hiddenSection = document.querySelector('main-section');
 
+// work section variables
+const workSection = document.getElementById('project-cards-container');
+
+// cancle mobile menu
 function reverseEvent() {
   mainBody.style.display = 'block';
   mobileMenu.style.display = 'none';
@@ -56,12 +60,12 @@ const projectDetail = [
   {
     id: 1,
     name: 'Keeping track of hundreds  of components website',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-img-1.png',
     technologies: {
-      first: 'html',
-      second: 'Bootstrap',
-      third: 'Ruby on rails',
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby on rails',
     },
     linkTo_live: '#',
     linkTo_source: '#',
@@ -69,12 +73,12 @@ const projectDetail = [
   {
     id: 2,
     name: 'Data Dashboard Healthcare',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    featured_image: 'images/featured-images/project Placeholder 2.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featured_image: 'images/featured-images/project Placeholder 2.png.png',
     technologies: {
-      first: 'html',
-      second: 'Bootstrap',
-      third: 'Ruby',
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby',
     },
     linkTo_live: '#',
     linkTo_source: '#',
@@ -82,12 +86,51 @@ const projectDetail = [
   {
     id: 3,
     name: 'Website Protfolio ',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featured_image: 'images/featured-images/project Placeholder 3.png',
+    technologies: {
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
+  },
+  {
+    id: 4,
+    name: 'Profesional Art Printing Data More',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featured_image: 'images/featured-images/project Placeholder 1.png',
+    technologies: {
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
+  },
+  {
+    id: 5,
+    name: 'Data Dashboard Healthcare',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project Placeholder 2.png',
     technologies: {
-      first: 'html',
-      second: 'Bootstrap',
-      third: 'Ruby',
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby',
+    },
+    linkTo_live: '#',
+    linkTo_source: '#',
+  },
+  {
+    id: 6,
+    name: 'Website Protfolio ',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    featured_image: 'images/featured-images/project Placeholder 3.png',
+    technologies: {
+      0: 'html',
+      1: 'Bootstrap',
+      2: 'Ruby',
     },
     linkTo_live: '#',
     linkTo_source: '#',
@@ -113,3 +156,37 @@ if (desktopScreen.matches) {
 
   closePopupBtn.addEventListener('click', closePopUpDesktop);
 }
+
+// create the work section dynamically
+const cards = Object.keys(projectDetail);
+cards.forEach((card) => {
+  // create the card header and append to container
+  const workCard = document.createElement('div');
+  workCard.classList.add('work-card');
+  workSection.appendChild(workCard);
+
+  // add header to work card
+  const cardHeader = document.createElement('h4');
+  cardHeader.classList.add('card-header');
+  cardHeader.innerText = projectDetail[card].name;
+  workCard.appendChild(cardHeader);
+
+  // add the description section
+  const cardDescription = document.createElement('p');
+  cardDescription.classList.add('card-description');
+  cardDescription.innerText = projectDetail[card].description;
+  workCard.appendChild(cardDescription);
+  const technologiesContainer = document.createElement('ul');
+  technologiesContainer.classList.add('card-tags');
+  const techno = Object.keys(projectDetail[card].technologies);
+  techno.forEach((btn) => {
+    const technologylist = document.createElement('li');
+    const technologyBtn = document.createElement('button');
+    technologyBtn.classList.add('tag');
+    technologyBtn.classList.add('blur');
+    technologyBtn.innerText = projectDetail[card].technologies[btn];
+    technologylist.appendChild(technologyBtn);
+    technologiesContainer.appendChild(technologylist);
+    workCard.appendChild(technologiesContainer);
+  });
+});
