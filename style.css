@@ -1044,3 +1044,11 @@ ul {
   transform: rotate(360deg);
   color: #f55800;
 }
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}

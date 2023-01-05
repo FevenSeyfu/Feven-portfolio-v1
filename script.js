@@ -45,3 +45,19 @@ cancelBtn.addEventListener('click', reverseEvent);
 for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', chooseSection);
 }
+
+// form validation
+// check if email is lowercase
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const alert = document.getElementById('alert');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    alert.classList.replace('hide', 'show');
+    alert.style.color = 'red';
+    alert.innerText = 'Email must be lowercase!form not sent, Please try again';
+  }
+});
