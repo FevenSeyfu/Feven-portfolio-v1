@@ -207,7 +207,7 @@ cards.forEach((card) => {
 const popupWindow = document.querySelector('#popup-window');
 const popupBackground = document.querySelector('#popup-bg');
 const closePopupBtn = document.querySelector('.close-popup-btn');
-const hiddenSection = document.querySelector('main-section');
+const hiddenSection = document.querySelector('#main-section');
 // popup window elements
 const projectTitle = document.querySelector('.project-title');
 const popupTechnologiesContainer = document.querySelector('#tag-popup');

@@ -1062,7 +1062,7 @@ ul {
 
 /* Project detail popup window desktop version styling */
 .popup-bg {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   z-index: -1;
@@ -1082,7 +1082,7 @@ ul {
   flex-direction: column;
   position: absolute;
   width: 80vw;
-  height: 631px;
+  height: 100vh;
   left: 10%;
   top: 112px;
   z-index: 9999;
@@ -1090,7 +1090,7 @@ ul {
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 24px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .top-section {
@@ -1142,37 +1142,38 @@ ul {
   color: #3c3a39;
 }
 
-.demo-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1.5rem;
-}
-
 .project-placeholder-img {
   position: absolute;
-  width: 659px;
-  height: 448px;
-  margin-top: 1rem;
+  width: 50vw;
+  height: 50vh;
+  margin-top: 2rem;
 }
 
 .project-description {
   position: absolute;
-  width: 424px;
-  height: 336px;
+  width: 30%;
+  height: 30vh;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #344563;
-  left: 60%;
+  left: 750px;
+  top: 150px;
+  overflow-wrap: break-word;
 }
 
 .btns-container {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 60%;
-  left: 70%;
+  left: 750px;
+  top: 250px;
   gap: 12px;
+}
+
+.demo-section.mobile {
+  display: flex;
+  flex-direction: column;
 }
