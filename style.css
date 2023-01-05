@@ -1039,13 +1039,15 @@ ul {
   grid-template-columns: repeat(3, auto);
   justify-items: center;
   align-self: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .project-cards-mobile {
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: auto;
   justify-items: center;
+  margin: 1.5rem;
 }
 
 .show {
@@ -1079,16 +1081,16 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 80%;
-  height: 80%;
-  left: 10vw;
+  width: 80vw;
+  height: 631px;
+  left: 10%;
   top: 112px;
   z-index: 9999;
   background: #fff;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 24px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .top-section {
@@ -1113,35 +1115,64 @@ ul {
   border: none;
 }
 
-.tags-container.popup {
-  border: 1px solid black;
+#tag-popup {
+  display: flex;
+  flex-direction: row;
   height: 40px;
+  left: 24px;
+}
+
+.tag-popup {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  width: 99px;
+  height: 40px;
+  border: 1px solid #979493;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
 }
 
 .demo-section {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
 }
 
 .project-placeholder-img {
-  border: 1px solid black;
-  width: 60%;
-  height: 60%;
-  left: calc(50% - 659px / 2 - 224.5px);
-  top: 156px;
+  position: absolute;
+  width: 659px;
+  height: 448px;
+  margin-top: 1rem;
 }
 
 .project-description {
-  width: 40%;
-  height: 50%;
+  position: absolute;
+  width: 424px;
+  height: 336px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+  left: 60%;
 }
 
 .btns-container {
+  position: absolute;
   display: flex;
   flex-direction: row;
-  top: calc(50% - 48px / 2 + 264.5px);
-  left: 700px;
+  top: 60%;
+  left: 70%;
   gap: 12px;
 }

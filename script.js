@@ -8,13 +8,6 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const mobileMenuContent = document.querySelectorAll('.nav-items .mobile');
 const menuElements = Array.from(mobileMenuContent);
 
-// popup window
-const openPopupBtn = document.querySelectorAll('.open-popup-btn');
-const popupWindow = document.querySelector('#popup-window');
-const popupBackground = document.querySelector('#popup-bg');
-const closePopupBtn = document.querySelector('.close-popup-btn');
-const hiddenSection = document.querySelector('main-section');
-
 // work section variables match for screen size
 const workSection = document.getElementById('project-cards-container');
 function checkscreensize() {
@@ -148,26 +141,6 @@ const projectDetail = [
   },
 ];
 
-// creat popup window desktop version
-function openPopUpDesktop() {
-  window.scrollTo(0, 0);
-  popupWindow.style.display = 'block';
-  popupBackground.classList.add('popup-bg');
-  hiddenSection.style.display = 'none';
-}
-function closePopUpDesktop() {
-  window.location.href = '#portfolio';
-  popupWindow.style.display = 'none';
-  popupBackground.classList.remove('popup-bg');
-}
-if (desktopScreen.matches) {
-  for (let i = 0; i < openPopupBtn.length; i += 1) {
-    openPopupBtn[i].addEventListener('click', openPopUpDesktop);
-  }
-
-  closePopupBtn.addEventListener('click', closePopUpDesktop);
-}
-
 // create the work section dynamically
 const cards = Object.keys(projectDetail);
 cards.forEach((card) => {
@@ -178,6 +151,8 @@ cards.forEach((card) => {
   const imageLink = projectDetail[card].featured_image;
   const hoverImageLink = 'images/featured-images/hover-image-placeholder.svg';
   workCard.style.background = `url(${imageLink})`;
+  workCard.style.backgroundRepeat = 'no-repeat';
+  workCard.style.backgroundSize = 'cover';
   workSection.appendChild(workCard);
 
   // create the card header and append to container
@@ -204,6 +179,7 @@ cards.forEach((card) => {
     technologylist.appendChild(technologyBtn);
     technologiesContainer.appendChild(technologylist);
     workCard.appendChild(technologiesContainer);
+    workCard.setAttribute('data-id', `${projectDetail[card].id}`);
   });
   // Add the button
   const actionButton = document.createElement('button');
@@ -215,10 +191,64 @@ cards.forEach((card) => {
   workCard.addEventListener('mouseenter', () => {
     actionButton.classList.add('show');
     workCard.style.background = `url(${hoverImageLink})`;
+    workCard.style.backgroundRepeat = 'no-repeat';
+    workCard.style.backgroundSize = 'cover';
   });
   // hide action button when not hovering
   workCard.addEventListener('mouseleave', () => {
     actionButton.classList.remove('show');
     workCard.style.background = `url(${imageLink})`;
+    workCard.style.backgroundRepeat = 'no-repeat';
+    workCard.style.backgroundSize = 'cover';
   });
 });
+
+/// popup window variables
+const popupWindow = document.querySelector('#popup-window');
+const popupBackground = document.querySelector('#popup-bg');
+const closePopupBtn = document.querySelector('.close-popup-btn');
+const hiddenSection = document.querySelector('main-section');
+// popup window elements
+const projectTitle = document.querySelector('.project-title');
+const popupTechnologiesContainer = document.querySelector('#tag-popup');
+const popupImage = document.querySelector('.project-placeholder-img.popup');
+const popupDescription = document.querySelector('.project-description');
+// creat popup window desktop version
+function openPopUpDesktop(id) {
+  // Add content to popup
+  projectTitle.innerText = projectDetail[id].name;
+  const technoPopup = Object.keys(projectDetail[id].technologies);
+  technoPopup.forEach((btn) => {
+    const popupTechnologies = document.createElement('ul');
+    popupTechnologies.classList.add('card-tags');
+    const popupTechnologiesItem = document.createElement('li');
+    const popupTechnologiesBtn = document.createElement('button');
+    popupTechnologiesBtn.classList.add('tag-popup');
+    popupTechnologiesBtn.innerText = `${projectDetail[id].technologies[btn]} `;
+    popupTechnologiesItem.appendChild(popupTechnologiesBtn);
+    popupTechnologies.appendChild(popupTechnologiesItem);
+    popupTechnologiesContainer.appendChild(popupTechnologies);
+  });
+  popupImage.src = `${projectDetail[id].featured_image} `;
+  popupDescription.innerText = projectDetail[id].description;
+  window.scrollTo(0, 0);
+  popupWindow.style.display = 'block';
+  popupBackground.classList.add('popup-bg');
+  hiddenSection.style.display = 'none';
+}
+function closePopUpDesktop() {
+  window.location.href = '#portfolio';
+  popupWindow.style.display = 'none';
+  popupBackground.classList.remove('popup-bg');
+}
+if (desktopScreen.matches) {
+  const workCard = document.querySelectorAll('.work-card');
+  workCard.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = e.target.parentNode.getAttribute('data-id');
+      openPopUpDesktop(id);
+    });
+  });
+  closePopupBtn.addEventListener('click', closePopUpDesktop);
+}
