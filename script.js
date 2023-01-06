@@ -218,8 +218,8 @@ function openPopUpDesktop(id) {
   // Add content to popup
   projectTitle.innerText = projectDetail[id].name;
   const technoPopup = Object.keys(projectDetail[id].technologies);
+  const popupTechnologies = document.createElement('ul');
   technoPopup.forEach((btn) => {
-    const popupTechnologies = document.createElement('ul');
     popupTechnologies.classList.add('card-tags');
     const popupTechnologiesItem = document.createElement('li');
     const popupTechnologiesBtn = document.createElement('button');
@@ -227,8 +227,8 @@ function openPopUpDesktop(id) {
     popupTechnologiesBtn.innerText = `${projectDetail[id].technologies[btn]} `;
     popupTechnologiesItem.appendChild(popupTechnologiesBtn);
     popupTechnologies.appendChild(popupTechnologiesItem);
-    popupTechnologiesContainer.appendChild(popupTechnologies);
   });
+  popupTechnologiesContainer.appendChild(popupTechnologies);
   popupImage.src = `${projectDetail[id].featured_image} `;
   popupDescription.innerText = projectDetail[id].description;
   window.scrollTo(0, 0);
@@ -240,6 +240,8 @@ function closePopUpDesktop() {
   window.location.href = '#portfolio';
   popupWindow.style.display = 'none';
   popupBackground.classList.remove('popup-bg');
+  hiddenSection.style.display = 'block';
+  popupTechnologiesContainer.innerHTML = '';
 }
 if (desktopScreen.matches) {
   const workCard = document.querySelectorAll('.work-card');
