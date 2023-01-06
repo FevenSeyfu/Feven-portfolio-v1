@@ -243,14 +243,12 @@ function closePopUpDesktop() {
   hiddenSection.style.display = 'block';
   popupTechnologiesContainer.innerHTML = '';
 }
-if (desktopScreen.matches) {
-  const workCard = document.querySelectorAll('.work-card');
-  workCard.forEach((card) => {
-    card.addEventListener('click', (e) => {
-      e.preventDefault();
-      const id = e.target.parentNode.getAttribute('data-id');
-      openPopUpDesktop(id);
-    });
+const workCard = document.querySelectorAll('.work-card');
+workCard.forEach((card) => {
+  card.addEventListener('click', (e) => {
+    e.preventDefault();
+    const id = e.target.parentNode.getAttribute('data-id');
+    openPopUpDesktop(id);
   });
-  closePopupBtn.addEventListener('click', closePopUpDesktop);
-}
+});
+closePopupBtn.addEventListener('click', closePopUpDesktop);
