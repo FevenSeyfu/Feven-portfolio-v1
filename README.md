@@ -70,22 +70,21 @@ Plain CSS with flexbox.
 <!-- GETTING STARTED -->
 
 <!-- ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
+.
 
 To get a local copy up and running, follow these steps. -->
 
-<!-- ### Prerequisites
+- Step 1: Clone this project using this git comand "git clone", (if you don't have git installed please visit
+https://git-scm.com/downloads and install it).
+- Step 2: Once you have installed git you can clone this project using the command below:
+  ```
+  git clone https://github.com/FevenSeyfu/portfolio-v1.git
+  ```
+- Step 3: Once you have cloned this repo navigate to the folder that contains 
+the repository.
+- Step 4: If you want to watch the html file open it with your favorite web browser.
+- Step 5: If you want to edit this project open it with your favorite text editor.
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 <!-- AUTHORS -->
 
@@ -95,8 +94,8 @@ Example command:
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://fevenseyfu.github.io)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/feven-seyfu-0008641b0)
+- GitHub: [@FevenSeyfu](https://github.com/FevenSeyfu)
+- LinkedIn: [@feven-seyfu](https://www.linkedin.com/in/feven-seyfu-0008641b0)
 
 
 <!-- FUTURE FEATURES -->
