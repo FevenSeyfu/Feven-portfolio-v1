@@ -47,7 +47,6 @@ for (let i = 0; i < menuElements.length; i += 1) {
 }
 
 // Preserving data in browser
-g
 const inputData = {};
 const nameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email');
@@ -77,6 +76,7 @@ function fetchData() {
 
   // check if not null
   if (isRealValue(parseData)) {
+    // auto refill input field on reload
     nameInput.value = parseData.name;
     emailInput.value = parseData.email;
     commentInput.value = parseData.comment;
