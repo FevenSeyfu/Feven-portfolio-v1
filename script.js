@@ -45,3 +45,46 @@ cancelBtn.addEventListener('click', reverseEvent);
 for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', chooseSection);
 }
+
+// Preserving data in browser
+// test if localstorage exist
+function testStorage() {
+  const test = 'test';
+  try {
+    localStorage.setItem(test, test);
+    localStorage.removeItem(test);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+const inputData = {};
+const form = document.getElementById('form');
+const nameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const commentInput = document.getElementById('comment-input');
+// const submitBtn = document.getElementById('submit-btn');
+// store data
+function storeInput() {
+  inputData.name = nameInput.value;
+  inputData.email = emailInput.value;
+  inputData.comment = commentInput.value;
+  const jsonData = JSON.stringify(inputData);
+  window.localStorage.setItem('formData', jsonData);
+}
+// listen for change
+nameInput.addEventListener('change', storeInput);
+emailInput.addEventListener('change', storeInput);
+commentInput.addEventListener('change', storeInput);
+
+// get data from storage
+function fetchData() {
+  const data = localStorage.getItem('formData');
+  const parseData = JSON.parse(data);
+  nameInput.value = parseData.name;
+  emailInput.value = parseData.email;
+  commentInput.value = parseData.comment;
+}
+window.onload = () => {
+  fetchData();
+};
