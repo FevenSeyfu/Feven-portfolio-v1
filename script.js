@@ -47,23 +47,11 @@ for (let i = 0; i < menuElements.length; i += 1) {
 }
 
 // Preserving data in browser
-// test if localstorage exist
-function testStorage() {
-  const test = 'test';
-  try {
-    localStorage.setItem(test, test);
-    localStorage.removeItem(test);
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
+g
 const inputData = {};
-const form = document.getElementById('form');
 const nameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email');
 const commentInput = document.getElementById('comment-input');
-// const submitBtn = document.getElementById('submit-btn');
 // store data
 function storeInput() {
   inputData.name = nameInput.value;
@@ -77,13 +65,22 @@ nameInput.addEventListener('change', storeInput);
 emailInput.addEventListener('change', storeInput);
 commentInput.addEventListener('change', storeInput);
 
+// function to check if not null
+function isRealValue(obj) {
+  return obj && obj !== 'null' && obj !== 'undefined';
+}
+
 // get data from storage
 function fetchData() {
   const data = localStorage.getItem('formData');
   const parseData = JSON.parse(data);
-  nameInput.value = parseData.name;
-  emailInput.value = parseData.email;
-  commentInput.value = parseData.comment;
+
+  // check if not null
+  if (isRealValue(parseData)) {
+    nameInput.value = parseData.name;
+    emailInput.value = parseData.email;
+    commentInput.value = parseData.comment;
+  }
 }
 window.onload = () => {
   fetchData();
