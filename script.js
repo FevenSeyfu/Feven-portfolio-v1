@@ -45,3 +45,43 @@ cancelBtn.addEventListener('click', reverseEvent);
 for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', chooseSection);
 }
+
+// Preserving data in browser
+const inputData = {};
+const nameInput = document.getElementById('full-name');
+const emailInput = document.getElementById('email');
+const commentInput = document.getElementById('comment-input');
+// store data
+function storeInput() {
+  inputData.name = nameInput.value;
+  inputData.email = emailInput.value;
+  inputData.comment = commentInput.value;
+  const jsonData = JSON.stringify(inputData);
+  window.localStorage.setItem('formData', jsonData);
+}
+// listen for change
+nameInput.addEventListener('change', storeInput);
+emailInput.addEventListener('change', storeInput);
+commentInput.addEventListener('change', storeInput);
+
+// function to check if not null
+function isRealValue(obj) {
+  return obj && obj !== 'null' && obj !== 'undefined';
+}
+
+// get data from storage
+function fetchData() {
+  const data = localStorage.getItem('formData');
+  const parseData = JSON.parse(data);
+
+  // check if not null
+  if (isRealValue(parseData)) {
+    // auto refill input field on reload
+    nameInput.value = parseData.name;
+    emailInput.value = parseData.email;
+    commentInput.value = parseData.comment;
+  }
+}
+window.onload = () => {
+  fetchData();
+};
