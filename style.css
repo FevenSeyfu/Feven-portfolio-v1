@@ -1032,7 +1032,6 @@ ul {
   color: #f55800;
 }
 
-
 .hide {
   display: none;
 }
@@ -1057,10 +1056,6 @@ ul {
   grid-template-rows: auto;
   justify-items: center;
   margin: 1.5rem;
-}
-
-.show {
-  display: block;
 }
 
 .work-card-hover {
