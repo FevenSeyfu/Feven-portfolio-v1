@@ -252,3 +252,4 @@ workCard.forEach((card) => {
   });
 });
 closePopupBtn.addEventListener('click', closePopUpDesktop);
+
