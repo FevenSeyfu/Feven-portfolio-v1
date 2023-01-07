@@ -34,14 +34,40 @@
 				</ul>
 			</nav>
 		</header>
+		<div id="popup-window" class="popup-window-style hide ">
+				<div class="top-section">
+					<h2 class="project-title"></h2>
+					<button type="reset" class="close-btn">
+						<img src="images/icons/Cancel-Icon.svg" alt="close button" class="close-popup-btn">
+					</button>
+				</div>
+				<div id="tag-popup"></div>
+				<div class="demo-section mobile">
+					<img src="" alt="project demo image" class="project-placeholder-img popup">
+					<div class="right-section">
+						<p class="project-description"></p>
+						<div class="btns-container">
+							<button class="main-btn popup open-livedemo-btn">
+								See Live
+								<img  src="images/icons/Icon-see live.svg" alt="livedemo button" class="btn-icon">
+							</button>
+							<button class="main-btn popup open-livedemo-btn">
+								See Source
+								<img src="images/icons/Github-icon.svg" alt="github-icon" class="btn-icon">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
     <div class="main-body">
+			<span class="" id="popup-bg">
 			<header class="toolbar-container">
 					<nav class="nav-bar">
 							<div class="logo">
 									<a href="#" class="logo-placeholder">Feven Seyfu</a>
 							</div>
 							<div class="hamburger-icon">
-									<a><img src="images/icons/Menu-icon.svg" class="menu-icon" alt="menu icon"></a>
+								<a><img src="images/icons/Menu-icon.svg" class="menu-icon" alt="menu icon"></a>
 							</div>
 							<div class="desktop">
 									<ul class="nav-items">
@@ -100,128 +126,38 @@
 							</ul>
 					</div>
 			</section>
+			</span>
+			<span id="main-section">
     	<section class="works-section" id="portfolio">
         <div class="works-header">
 					<h2 class="header-text">My Recent Works</h2>
-					<hr class="hl" >
+					<hr class="hl">
         </div>
         <div class="main-work-section">
-          <img src="images/main-work-Img-Placeholder.svg" alt="main work demo placeholder" class="img-placeholder">
-          <div class="work-container"  title="Project Description">
-							<h3 class="work-header">Multi-Post Stories</h3>
-							<div class="work-description">
-									<p>
-											A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-									</p>
-							</div>
-							<div>
-									<ul class="tags-container">
-											<li>
-													<button class="tag" type="button">CSS</button>
-											</li>
-											<li><button class="tag" type="button">html</button></li>
-											<li><button class="tag" type="button">bootstrap</button></li>
-											<li><button class="tag" type="button">Ruby</button></li>
-									</ul>
-							</div>
-							<button class="main-btn work-sec" type="button">See Project</button>
-					</div>
+            <img src="images/main-work-Img-Placeholder.svg" alt="main work demo placeholder" class="img-placeholder">
+            <div class="work-container"  title="Project Description">
+                <h3 class="work-header">Multi-Post Stories</h3>
+                <div class="work-description">
+                    <p>
+                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+                    </p>
+                </div>
+                <div>
+                    <ul class="tags-container">
+                        <li>
+                            <button class="tag">CSS</button>
+                        </li>
+                        <li><button class="tag">html</button></li>
+                        <li><button class="tag">bootstrap</button></li>
+                        <li><button class="tag">Ruby</button></li>
+                    </ul>
+                </div>
+                <button class="main-btn work-sec open-popup-btn">See Project</button>
+            </div>
         </div>
         <!-- work Card -->
-        <div class="work-cards-container">
-            <div class="card-group-one">
-                <div class="work-card">
-									<h4 class="card-header">Professional Art <br> Printing Data</h4>
-									<p class="card-description">
-											A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-									</p>
-									<div>
-											<ul class="card-tags">
-													<li><button class="tag blur" type="button">html</button></li>
-													<li><button class="tag blur" type="button">bootstrap</button></li>
-													<li><button class="tag blur" type="button">Ruby</button></li>
-											</ul>
-									</div>
-									<button class="btn-max-width" type="button">See Project</button>
-                </div>
-                <!-- second work card -->
-                <div class="work-card">
-                    <h4 class="card-header">Professional Art <br> Printing Data</h4>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width hide-btn" type="button">See Project</button>
-                </div>
-                 <!-- third -->
-                <div class="work-card">
-                    <h4 class="card-header">Professional Art <br> Printing Data</h4>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width hide-btn" type="button">See Project</button>
-                </div>
-            </div>
-            <div class="card-group-two">
-                <!-- fourth -->
-                <div class="work-card">
-                    <h4 class="card-header">Professional Art <br> Printing Data</h4>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width hide-btn" type="button">See Project</button>
-                </div>
-                <!-- Fifth -->
-                <div class="work-card">
-                    <h4 class="card-header">Professional Art <br> Printing Data</h4>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width hide-btn" type="button">See Project</button>
-                </div>
-                <!-- sixth -->
-                <div class="work-card">
-                    <h4 class="card-header">Professional Art <br> Printing Data</h4>
-                    <p class="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-                    </p>
-                    <div>
-                        <ul class="card-tags">
-                            <li><button class="tag blur" type="button">html</button></li>
-                            <li><button class="tag blur" type="button">bootstrap</button></li>
-                            <li><button class="tag blur" type="button">Ruby</button></li>
-                        </ul>
-                    </div>
-                    <button class="btn-max-width hide-btn" type="button">See Project</button>
-                </div>
-            </div>
+				<div id="project-cards-container" class="project-cards">
+				</div>
         </div>
     </section>
     <section class="about-section" id="about">
@@ -334,6 +270,7 @@
         </div>
     </section>
 		</div>
+</span>
 
 		<script src="script.js"></script>
 </body>
