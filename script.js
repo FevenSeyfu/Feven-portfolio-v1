@@ -58,7 +58,6 @@ for (let i = 0; i < menuElements.length; i += 1) {
   menuElements[i].addEventListener('click', chooseSection);
 }
 
-
 // form validation
 // check if email is lowercase
 const form = document.getElementById('contact-form');
@@ -269,4 +268,3 @@ workCard.forEach((card) => {
   });
 });
 closePopupBtn.addEventListener('click', closePopUpDesktop);
-
