@@ -223,16 +223,17 @@
             </h2>
         </div>
         <div class="form-cont">
-            <form action="https://formspree.io/f/mlevqpbd" method="post" class="form-container">
+            <form action="https://formspree.io/f/mlevqpbd" method="post" class="form-container" id="contact-form">
                 <div class="input-field">
-                    <input type="text" class="name-input box" placeholder="Full Name" maxlength="30" required >
+                  <input type="text" class="name-input box" placeholder="Full Name" maxlength="30" required >
                 </div>
                 <div class="input-field">
-                    <input type="email" name="email" class="email-input box" placeholder="email address" required>
+                  <input type="email" id="email" name="email" class="email-input box" placeholder="email address" required>
                 </div>
                 <div class="input-field">
                     <textarea class="box-text" name="comment" id="comment-input" cols="30" rows="10" placeholder="Enter text here" maxlength="500" aria-placeholder="Enter text area ..." required></textarea>
                 </div>
+								<p class="hide" id="alert"></p>
                 <button class="main-btn center" type="submit">Get in touch</button>
             </form>
         </div>

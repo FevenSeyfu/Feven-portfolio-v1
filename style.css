@@ -505,7 +505,7 @@ ul {
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 5750px;
+  top: 5800px;
   height: 72px;
   width: 100vw;
   color: black;
@@ -995,7 +995,7 @@ ul {
     width: 100%;
     height: 72px;
     left: 0;
-    top: 4000px;
+    top: 4030px;
   }
 
   .social-icon.bottom {
@@ -1032,6 +1032,14 @@ ul {
   color: #f55800;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline;
+}
+
 /* Dynamic-work card */
 .project-cards {
   margin: 1rem 142px;
@@ -1048,10 +1056,6 @@ ul {
   grid-template-rows: auto;
   justify-items: center;
   margin: 1.5rem;
-}
-
-.show {
-  display: block;
 }
 
 .work-card-hover {
