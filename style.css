@@ -1039,6 +1039,8 @@ ul {
 
 .show {
   display: inline;
+}
+
 /* Dynamic-work card */
 .project-cards {
   margin: 1rem 142px;
