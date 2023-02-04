@@ -32,7 +32,7 @@ body {
   left: 1rem;
   top: 1rem;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
   color: white;
   display: flex;
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  padding: 10px 0 10px 24px;
+  padding: 10px 0 10px 1.5rem;
   width: 100%;
   background-image: url('images/illustration-header-mobile.svg');
   background-repeat: no-repeat;
@@ -72,32 +72,31 @@ body {
   font-style: normal;
   font-size: 56px;
   line-height: 90%;
-  line-height: 64px;
+  line-height: 4rem;
   justify-content: left;
   align-items: baseline;
   letter-spacing: 0.37px;
   font-weight: 400;
   color: #ff6b00;
 
-  /* margin-top: 50px; */
 }
 
 .supporting-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   justify-self: left;
-  line-height: 32px;
+  line-height: 2rem;
   line-height: 114%;
   color: #fff5e1;
-  margin: 12px 0;
+  margin: 0.75rem 0;
 }
 
 .description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   justify-self: left;
   align-self: flex-start;
   color: #fff;
@@ -115,8 +114,8 @@ ul {
   justify-self: left;
   align-items: center;
   justify-content: space-between;
-  max-width: 200px;
-  padding: 10px;
+  max-width: 12.5rem;
+  padding: 0.65rem;
 }
 
 .illustration-header {
@@ -125,46 +124,32 @@ ul {
 
 /* style work section */
 
-/* .works-section {
-  background-color: white;
-  color: black;
-  position: absolute;
-  width: 100%;
-  height: 3000px;
-  left: 0;
-  top: 570px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  padding: 0 24px;
-} */
 
 .work-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .header-text {
   display: flex;
   align-items: center;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: 'Crete Round', serif;
   font-weight: 40;
-  line-height: 52px;
+  line-height: 3.25rem;
   color: #1c1a19;
-  padding-top: 120px;
+  padding-top: 7.5rem;
 }
 
 .hl {
-  width: 327px;
+  width: 20.438rem;
   height: 0;
-  border: 1px solid #212121;
+  border: 0.063rem solid #212121;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .img-placeholder {
@@ -186,14 +171,14 @@ ul {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .work-description {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   line-height: 124%;
   justify-self: left;
   align-self: flex-start;
@@ -204,19 +189,19 @@ ul {
 .tags-container {
   display: flex;
   flex-direction: row;
-  gap: 12px;
-  width: 297px;
+  gap: 0.75rem;
+  width: 18.563rem;
 }
 
 .tag {
   background-color: white;
-  border: 2px solid;
+  border: 0.125rem solid;
   color: #8993a4;
   padding: 0.3rem 0.75rem;
-  height: 40px;
+  height: 2.5rem;
   flex: 1 5 auto;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
   line-height: 110%;
 }
 
@@ -225,20 +210,20 @@ ul {
   background-color: #ff6b00;
   color: white;
   width: fit-content;
-  height: 48px;
+  height: 3rem;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 3%;
   border: none;
-  padding: 2px 10px;
+  padding: 0.125rem 10px;
 }
 
 .main-btn:hover {
   background-color: #fff5e1;
   color: #ff6b00;
-  border: 1px solid #f55800;
+  border: 0.063rem solid #f55800;
 }
 
 .main-btn:disabled {
@@ -256,7 +241,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
@@ -276,16 +261,15 @@ ul {
   padding: 0 0.75rem;
   font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
 }
-
 .card-description {
   color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   padding: 0 0.75rem;
 }
 
@@ -294,7 +278,7 @@ ul {
   flex-direction: row;
   margin-left: 0.75rem;
   margin-top: 0.5rem;
-  gap: 12px;
+  gap: 0.813rem;
 }
 
 .blur {
@@ -309,25 +293,25 @@ ul {
   color: white;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   letter-spacing: 3%;
   justify-content: center;
-  height: 48px;
+  height: 3rem;
   border: none;
-  margin-top: 85px;
+  margin-top: 5.313rem;
 }
 
 .about-section {
   position: absolute;
   background-color: #1c1a19;
-  top: 3800px;
+  top: 237.5rem;
   width: 100%;
-  height: 1401px;
+  height: 87.5rem;
   right: 0;
   display: flex;
   flex-direction: column;
-  padding: 10px 24px;
+  padding: 0.625rem 1.5rem;
 
   /* add background vector */
   background-image: url('images/illustration-about me.svg');
@@ -343,10 +327,10 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 161px;
-  height: 48px;
+  padding: 0.75rem;
+  gap: 0.625rem;
+  width: 10.063rem;
+  height: 3rem;
   background: #f55800;
   flex: none;
   order: 2;
@@ -358,7 +342,7 @@ ul {
   width: 80%;
   height: 0;
   top: 35%;
-  border: 1px solid white;
+  border: 0.063rem solid white;
   justify-self: center;
 }
 
@@ -369,11 +353,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 24px;
-  gap: 24px;
+  padding: 7.5rem 1.5rem;
+  gap: 1.5rem;
   position: absolute;
   width: 100%;
-  height: 800px;
+  height: 50rem;
   left: calc(50% - 100vw / 2);
   top: 40%;
 }
@@ -383,18 +367,18 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  width: 169px;
-  height: 336px;
+  width: 10.563rem;
+  height: 21rem;
 }
 
 .skill-header {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .rectangle {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   background: #ff6b00;
   flex: none;
   order: 0;
@@ -406,17 +390,17 @@ ul {
 }
 
 .circle {
-  border-radius: 150px;
+  border-radius: 9.375rem;
 }
 
 .skill-title {
-  width: 115px;
-  height: 24px;
+  width: 7.188rem;
+  height: 1.5rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   display: flex;
   align-items: center;
   color: #fff;
@@ -427,13 +411,13 @@ ul {
 
 .skill {
   margin-top: 10px;
-  width: 114px;
-  height: 24px;
+  width: 7.125rem;
+  height: 1.5rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
+  font-size: 1.375rem;
+  line-height: 2.688rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -448,20 +432,20 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 24px;
-  gap: 58px;
+  padding: 7.5rem 1.5rem;
+  gap: 3.625rem;
   position: absolute;
   width: 100%;
-  height: 644px;
-  top: 5100px;
+  height: 40.25rem;
+  top: 318.75rem;
   left: calc(50% - 100vw / 2);
 }
 
 .form-intro {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   text-align: center;
   color: #172b4d;
 }
@@ -475,15 +459,15 @@ ul {
 
 .box {
   border: transparent;
-  border-bottom: #dbd8d7 solid 1px;
-  height: 46px;
+  border-bottom: #dbd8d7 solid 0.063rem;
+  height: 2.875rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  padding-left: 16px;
+  font-size: 0.938rem;
+  padding-left: 1rem;
   color: #979493;
-  width: 327px;
+  width: 20.438rem;
 }
 
 .box-text {
@@ -493,20 +477,20 @@ ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 12px;
-  width: 327px;
-  height: 114px;
-  margin-top: 24px;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  padding: 0.75rem;
+  width: 20.438rem;
+  height: 7.125rem;
+  margin-top: 1.5rem;
 }
 
 .bottom-nav {
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 5800px;
-  height: 72px;
+  top: 362.5rem;
+  height: 4.5rem;
   width: 100vw;
   color: black;
 }
@@ -529,27 +513,27 @@ ul {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 57px;
+  bottom: 3.563rem;
   background-color: #3c3c39;
 }
 
 .nav-items .mobile {
   width: 90%;
-  height: 40px;
-  border-radius: 8px;
+  height: 2.5rem;
+  border-radius: 0.5rem;
   flex: none;
   order: 0;
   flex-grow: 0;
-  border-bottom: 1px solid #6f6c6b;
+  border-bottom: 0.063rem solid #6f6c6b;
   color: #fff5e1;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  margin-top: 8px;
-  margin-left: 20px;
-  padding-left: 20px;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .cancel-btn {
@@ -586,7 +570,7 @@ ul {
 
   .nav-bar {
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
   }
 
   .hamburger-icon {
@@ -597,10 +581,10 @@ ul {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    left: 154px;
-    margin-top: 6px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    left: 9.625rem;
+    margin-top: 0.375rem;
     transition: color 2s, transform 2s;
   }
 
@@ -610,13 +594,13 @@ ul {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    gap: 8px;
+    gap: 0.5rem;
     position: absolute;
-    width: 255px;
-    height: 40px;
-    right: 194px;
+    width: 15.938rem;
+    height: 2.5rem;
+    right: 12.125rem;
 
-    /* top: calc(50% - 40px/2); */
+    /* top: calc(50% - 2.5rem/2); */
   }
 
   .nav-item {
@@ -625,17 +609,17 @@ ul {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
     color: #fff;
-    left: 10px;
+    left: 0.625rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px 12px;
-    gap: 10px;
-    width: 87px;
-    height: 40px;
+    padding: 0.625rem 0.75rem;
+    gap: 0.625rem;
+    width: 5.438rem;
+    height: 2.5rem;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -643,13 +627,13 @@ ul {
 
   .social-icon {
     position: absolute;
-    width: 20px;
-    height: 98.96px;
-    left: 36px;
+    width: 1.25rem;
+    height: 6.185rem;
+    left: 2.25rem;
     top: 15rem;
     display: flex;
     flex-direction: column;
-    gap: 29.28px;
+    gap: 1.83rem;
   }
 
   .headline {
@@ -669,37 +653,37 @@ ul {
     align-items: center;
     padding: 7rem 0;
     position: absolute;
-    width: 566px;
-    height: 798px;
-    left: 143px;
-    top: 72px;
+    width: 35.375rem;
+    height: 49.875rem;
+    left: 8.938rem;
+    top: 4.5rem;
   }
 
   .primary-text {
-    width: 566px;
-    height: 160px;
+    width: 35.375rem;
+    height: 10rem;
   }
 
   .supporting-text {
-    width: 566px;
-    height: 24px;
+    width: 35.375rem;
+    height: 1.5rem;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.75rem;
     display: flex;
     align-items: center;
   }
 
   .description {
-    width: 566px;
-    height: 123px;
+    width: 35.375rem;
+    height: 7.688rem;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.25rem;
+    line-height: 2rem;
     color: #f4f5f7;
     flex: none;
     order: 2;
@@ -715,17 +699,17 @@ ul {
     flex: none;
     order: 0;
     flex-grow: 0;
-    padding: 130px 150px  130px 150px;
+    padding: 8.125rem 150px  8.125rem 150px;
   }
 
   .header-text {
     width: 100%;
-    height: 52px;
+    height: 3.25rem;
     font-family: 'Crete Round', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
     display: flex;
     align-items: center;
     padding-top: 0;
@@ -736,13 +720,13 @@ ul {
     display: inline;
     width: 60%;
     margin-right: 10%;
-    border: 1px solid #212121;
+    border: 0.063rem solid #212121;
   }
 
   .main-work-section {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 1.5rem;
     width: 80vw;
     left: 0;
     margin: auto 10%;
@@ -762,9 +746,9 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 20px;
-    width: 448px;
-    height: 348px;
+    gap: 1.25rem;
+    width: 43rem;
+    height: 33rem;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -787,13 +771,13 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
     width: 100%;
-    height: 1400px;
+    height: 87.5rem;
     flex: none;
     order: 1;
     flex-grow: 0;
-    top: 1643px;
+    top: 102.688rem;
   }
 
   .card-group-one {
@@ -801,10 +785,10 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-self: flex-start;
-    gap: 24px;
+    gap: 1.5rem;
     position: absolute;
     width: 100%;
-    height: 448px;
+    height: 43rem;
     left: 0;
     padding: 0 10%;
     top: 900px;
@@ -814,13 +798,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
     position: absolute;
     width: 100%;
-    height: 435px;
+    height: 27.188rem;
     left: 0;
     padding: 0 10%;
-    top: 1340px;
+    top: 83.75rem;
   }
 
   .btn-max-width {
@@ -835,29 +819,31 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 1px solid black;
-    width: 369px;
-    height: 405px;
-    padding-bottom: 16px;
+    border: 0.063rem solid black;
+    width: 23.063rem;
+    height: 25.313rem;
+    padding-bottom: 1rem;
   }
 
   .work-card:hover {
     background: url('images/work card hover-Img-Placeholder.svg');
-    border: 2px solid #091e42;
-    filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+    border: 0.125rem solid #091e42;
+    filter: drop-shadow(0  3rem rgba(37, 47, 137, 0.08));
   }
 
   .work-card:hover .btn-max-width {
     display: block;
     position: absolute;
-    height: 58px;
+    height: 3.625rem;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     border: none;
   }
-
+  .work-card :not(:last-child) {
+    opacity: 100%;
+  }
   .work-card:hover :not(:last-child) {
     display: none;
   }
@@ -865,10 +851,10 @@ ul {
   .about-section {
     position: absolute;
     width: 100%;
-    height: 1310px;
+    height: 81.875rem;
     left: 0;
-    top: 2250px;
-    margin-top: 130px;
+    top: 140.625rem;
+    margin-top: 8.125rem;
     background-image: url('images/illustration-about me.svg');
     background-repeat: no-repeat;
     background-attachment: local;
@@ -880,12 +866,12 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 130px 0;
+    padding: 8.125rem 0;
     position: absolute;
     width: 40%;
-    height: 582px;
-    left: 142px;
-    gap: 24px;
+    height: 36.375;
+    left: 8.875rem;
+    gap: 1.5rem;
   }
 
   .skills-section {
@@ -893,16 +879,16 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 10%;
-    gap: 52px;
+    padding:  10%;
+    gap: 3.25rem;
     position: absolute;
     width: 100%;
-    height: 596px;
-    top: 650px;
+    height: 37.25rem;
+    top: 40.625rem;
   }
 
   .skill {
-    padding-top: 32px;
+    padding-top: 2rem;
   }
 
   .item {
@@ -910,9 +896,9 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 24px;
-    width: 289.46px;
-    height: 281.46px;
+    gap: 1.5rem;
+    width: 18.091rem;
+    height: 17.591rem;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -923,9 +909,9 @@ ul {
     position: absolute;
     height: 0;
     margin: 0 10%;
-    top: 610px;
+    top: 38.125rem;
     width: 80%;
-    border: 1px solid #fff;
+    border: 0.063rem solid #fff;
   }
 
   .form-section {
@@ -933,13 +919,13 @@ ul {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 130px 135px;
-    gap: 24px;
+    padding: 8.125rem 8.438rem;
+    gap: 1.5rem;
     position: absolute;
     width: 100%;
-    height: 590px;
+    height: 36.875rem;
     left: 0;
-    top: 3500px;
+    top: 216.75rem;
   }
 
   .form-sec-intro {
@@ -948,9 +934,9 @@ ul {
     align-items: center;
     justify-content: left;
     padding: 0;
-    gap: 24px;
-    width: 455px;
-    height: 256px;
+    gap: 1.5rem;
+    width: 28.438rem;
+    height: 16rem;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -964,8 +950,8 @@ ul {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
     display: flex;
     align-items: center;
     text-align: left;
@@ -977,25 +963,25 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .main-btn-center {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px;
-    gap: 10px;
-    width: 122px;
-    height: 48px;
+    padding: 0.75rem;
+    gap: 0.625rem;
+    width: 7.625rem;
+    height: 3rem;
   }
 
   .bottom-nav {
     position: absolute;
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
     left: 0;
-    top: 4030px;
+    top: 251.875rem;
   }
 
   .social-icon.bottom {
@@ -1004,10 +990,10 @@ ul {
     align-items: center;
     padding: 0;
     position: absolute;
-    width: 200px;
-    height: 40px;
+    width: 12.5rem;
+    height: 2.5rem;
     left: 40%;
-    top: 16px;
+    top: 1rem;
   }
 
   .bottom-icon path {
@@ -1018,8 +1004,8 @@ ul {
 /* add animation to project */
 .icon-btn:hover {
   transform: scale(2);
-  border: 1px solid white;
-  padding: 2px;
+  border: 0.063rem solid white;
+  padding: 0.125rem;
   margin: 3px;
 }
 
@@ -1042,7 +1028,7 @@ ul {
 
 /* Dynamic-work card */
 .project-cards {
-  margin: 1rem 142px;
+  margin: 1rem 8.875rem;
   display: grid;
   grid-template-columns: repeat(3, auto);
   justify-items: center;
@@ -1060,8 +1046,8 @@ ul {
 
 .work-card-hover {
   background: url('images/work card hover-Img-Placeholder.svg');
-  border: 2px solid #091e42;
-  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
+  border: 0.125rem solid #091e42;
+  filter: drop-shadow(0 3rem 3rem rgba(37, 47, 137, 0.08));
 }
 
 /* Project detail popup window desktop version styling */
@@ -1091,9 +1077,9 @@ ul {
   top: 10%;
   z-index: 9999;
   background: #fff;
-  border: 1px solid #ebecf0;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  padding: 24px;
+  border: 0.063rem solid #ebecf0;
+  box-shadow: 0 3rem 3rem rgba(37, 47, 137, 0.08);
+  padding: 1.5rem;
   overflow: scroll;
 }
 
@@ -1107,14 +1093,14 @@ ul {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   color: #172b4d;
 }
 
 .close-btn {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background: none;
   border: none;
 }
@@ -1123,7 +1109,7 @@ ul {
   display: flex;
   flex-direction: row;
   height: 2.5rem;
-  left: 24px;
+  left: 1.5rem;
 }
 
 .tag-popup {
@@ -1132,15 +1118,15 @@ ul {
   flex-direction: row;
   align-items: center;
   padding: 0.8rem 0.8rem;
-  border: 1px solid #979493;
+  border: 0.063rem solid #979493;
   flex: none;
   order: 1;
   flex-grow: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
   color: #3c3a39;
 }
 
@@ -1162,15 +1148,15 @@ ul {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.875rem;
   color: #344563;
 }
 
 .btns-container {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 @media (max-width: 768px) {
@@ -1181,8 +1167,8 @@ ul {
   }
 
   .close-btn {
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
   }
 
   .demo-section {

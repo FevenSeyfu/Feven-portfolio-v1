@@ -78,20 +78,20 @@ form.addEventListener('submit', (event) => {
 // store popup window data
 const projectDetail = [
   {
-    id: 1,
-    name: 'Keeping track of hundreds  of components website',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project-img-1.png',
+    id: 0,
+    name: 'Loan Calaculator website',
+    description: "A simple program to calculate loan(Monthly payment, total interest and total payment)",
+    featured_image: 'images/featured-images/loan.png',
     technologies: {
       0: 'html',
       1: 'Bootstrap',
-      2: 'Ruby on rails',
+      2: 'Javascript',
     },
-    linkTo_live: '#',
-    linkTo_source: '#',
+    linkTo_live: 'https://fevenseyfu.github.io/Loan-Calculator/',
+    linkTo_source: 'https://github.com/FevenSeyfu/Loan-Calculator',
   },
   {
-    id: 2,
+    id: 1,
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-Placeholder-2.png',
@@ -104,7 +104,7 @@ const projectDetail = [
     linkTo_source: '#',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Website Protfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-Placeholder-3.png',
@@ -117,7 +117,7 @@ const projectDetail = [
     linkTo_source: '#',
   },
   {
-    id: 4,
+    id: 3,
     name: 'Profesional Art Printing Data More',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-Placeholder-1.png',
@@ -130,7 +130,7 @@ const projectDetail = [
     linkTo_source: '#',
   },
   {
-    id: 5,
+    id: 4,
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-Placeholder-2.png',
@@ -143,7 +143,7 @@ const projectDetail = [
     linkTo_source: '#',
   },
   {
-    id: 6,
+    id: 5,
     name: 'Website Protfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     featured_image: 'images/featured-images/project-Placeholder-3.png',
@@ -169,6 +169,7 @@ cards.forEach((card) => {
   workCard.style.background = `url(${imageLink})`;
   workCard.style.backgroundRepeat = 'no-repeat';
   workCard.style.backgroundSize = 'cover';
+	workCard.style.Color = 'black';
   workSection.appendChild(workCard);
 
   // create the card header and append to container
@@ -229,6 +230,8 @@ const projectTitle = document.querySelector('.project-title');
 const popupTechnologiesContainer = document.querySelector('#tag-popup');
 const popupImage = document.querySelector('.project-placeholder-img.popup');
 const popupDescription = document.querySelector('.project-description');
+const liveDemo = document.getElementById('liveDemo-btn');
+const sourceCode =document.getElementById('see-sourcecode-btn');
 // creat popup window desktop version
 function openPopUpDesktop(id) {
   // Add content to popup
@@ -251,6 +254,10 @@ function openPopUpDesktop(id) {
   popupWindow.style.display = 'block';
   popupBackground.classList.add('popup-bg');
   hiddenSection.style.display = 'none';
+
+	// live demo and source code link
+	liveDemo.setAttribute('href',`${projectDetail[id].linkTo_live}`);
+  sourceCode.setAttribute('href',`${projectDetail[id].linkTo_source}`);
 }
 function closePopUpDesktop() {
   window.location.href = '#portfolio';
