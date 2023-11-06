@@ -79,6 +79,19 @@ form.addEventListener('submit', (event) => {
 const projectDetail = [
   {
     id: 0,
+    name: 'CineScope',
+    description: "CineScope is a dynamic and user-friendly movie listing web application that allows movie enthusiasts to effortlessly explore a vast collection of films enables users to browse, search, and discover movies and tv shows easily.",
+    featured_image: 'images/featured-images/Cinescope-demo.png',
+    technologies: {
+      0: 'HTML',
+      1: 'React',
+      2: 'Semantic UI',
+    },
+    linkTo_live: 'https://main--joyful-moxie-10b566.netlify.app/',
+    linkTo_source: 'https://github.com/FevenSeyfu/cine-scope',
+  },
+  {
+    id: 1,
     name: 'Loan Calaculator website',
     description: "A simple program to calculate loan(Monthly payment, total interest and total payment)",
     featured_image: 'images/featured-images/loan.png',
@@ -90,19 +103,7 @@ const projectDetail = [
     linkTo_live: 'https://fevenseyfu.github.io/Loan-Calculator/',
     linkTo_source: 'https://github.com/FevenSeyfu/Loan-Calculator',
   },
-  {
-    id: 1,
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project-Placeholder-2.png',
-    technologies: {
-      0: 'html',
-      1: 'Bootstrap',
-      2: 'Ruby',
-    },
-    linkTo_live: '#',
-    linkTo_source: '#',
-  },
+  
   {
     id: 2,
     name: 'Website Protfolio ',
@@ -116,45 +117,7 @@ const projectDetail = [
     linkTo_live: '#',
     linkTo_source: '#',
   },
-  {
-    id: 3,
-    name: 'Profesional Art Printing Data More',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project-Placeholder-1.png',
-    technologies: {
-      0: 'html',
-      1: 'Bootstrap',
-      2: 'Ruby',
-    },
-    linkTo_live: '#',
-    linkTo_source: '#',
-  },
-  {
-    id: 4,
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project-Placeholder-2.png',
-    technologies: {
-      0: 'html',
-      1: 'Bootstrap',
-      2: 'Ruby',
-    },
-    linkTo_live: '#',
-    linkTo_source: '#',
-  },
-  {
-    id: 5,
-    name: 'Website Protfolio ',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    featured_image: 'images/featured-images/project-Placeholder-3.png',
-    technologies: {
-      0: 'html',
-      1: 'Bootstrap',
-      2: 'Ruby',
-    },
-    linkTo_live: '#',
-    linkTo_source: '#',
-  },
+
 ];
 
 // create the work section dynamically

@@ -1059,7 +1059,7 @@ ul {
   display: block;
   width: 100vw;
   height: 100vh;
-  filter: blur(5px);
+  filter: blur(100px);
   overflow: hidden;
 }
 
